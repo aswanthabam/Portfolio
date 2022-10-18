@@ -1,0 +1,17 @@
+.header
+{
+  width: 100%;
+  background: var(--color-primary-dark);
+  padding: 5px;
+  z-index: 0;
+}
+.header .header-top
+{
+  position: relative;
+  top: 200px;
+}
+.header .my-image
+{
+  width: 100%;
+  height: auto;
+}

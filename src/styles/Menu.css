@@ -1,0 +1,26 @@
+.menu
+{
+  width: 100%;
+  height: auto;
+  min-height: 100px;
+}
+.menu .menu-item
+{
+  display: flex;
+  align-items: center;
+  justify-content: center ;
+  width: 100%;
+  height: 40px;
+  border-bottom: 1px solid #12121230;
+}
+.menu .menu-item .menu-link
+{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+.menu .menu-item .menu-link a
+{
+  text-decoration: none;
+  display: inline;
+}
