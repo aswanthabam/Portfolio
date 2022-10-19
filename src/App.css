@@ -1,15 +1,16 @@
 :root
 {
-  --color-primary: #000;
-  --color-primary-dark: #150050;
+  --color-primary: #111;
+  --color-primary-dark: #140606;
   --color-primary-dark2: #3F0071;
-  --color-accent: #FB2576;
-  --color-accent-light: #fb85b2;
+  --color-accent: #AC0E0E;
+  --color-accent-light: #ff4444;
   --color-dark: #fff;
 }
 *{
   margin: 0;
   padding: 0;
+  /*outline: 1px solid green;*/
 }
 body
 {
@@ -33,4 +34,12 @@ button
   border: none;
   border-radius: 5px;
   margin: 2px;
+}
+
+
+
+.content-margin-25
+{
+  padding: 0 25px 0 25px;
+  width: calc(100% - 50px);
 }

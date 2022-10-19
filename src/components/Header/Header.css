@@ -1,0 +1,70 @@
+.header
+{
+  width: calc(100% - 50px);
+  background: linear-gradient(0deg,var(--color-primary-dark), transparent);
+  padding: 5px 25px 5px 25px;
+  z-index: 0;
+  overflow: hidden;
+}
+.header .header-title
+{
+  width: 100%;
+  margin: 15px 0 25px 0;
+}
+.header .header-title .name
+{
+  margin-bottom: 10px;
+  text-shadow: 3px 3px 5px var(--color-accent);
+}
+.header .header-title .caption
+{
+  margin-bottom: 15px;
+}
+.header .header-description
+{
+  width: 100%;
+}
+.header .header-description .frame1
+{
+  width: 100%;
+}
+.header .header-description .frame1 .text
+{
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  margin-bottom: 15px;
+}
+.header .header-description .frame1 .buttons
+{
+  width: calc(100% - 30px);
+  display: flex;
+  justify-content: space-between;
+  margin: 0 15px 0 15px;
+  align-items: center;
+}
+.header .header-description .frame1 .buttons .btn
+{
+  width: auto;
+  padding: 10px 15px 10px 15px;
+  border-radius: 30px;
+  font-size: 15px;
+  box-shadow: 1px 1px 10px var(--color-accent);
+}
+.header .header-description .frame1 .buttons .btn.btn-1
+{
+  color: var(--color-accent);
+  margin-left: 20px;
+}
+.header .my-image
+{
+  width: 100%;
+  height: auto;
+}
+@media only screen and (max-width: 700px)
+{
+  .header
+  {
+    height: calc(100vh - 85px);
+  }
+}

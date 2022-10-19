@@ -1,15 +1,14 @@
 //import {Link} from 'react-router-dom';
-import Header from '../components/Header';
-import TopBar from '../components/TopBar';
-import {Description} from '../components/HomeComponents';
+import Header from '../components/Header/Header';
+//import TopBar from '../components/TopBar/TopBar';
+//import SideBar from '../components/SideBar/SideBar';
+import Main from '../components/Main/Main';
+//import {Description} from '../components/HomeComponents/HomeComponents';
 export default function Home()
 {
   return (
-    <div>
-      <TopBar/>
+    <Main>
       <Header/>
-      <h1>Home</h1>
-      <Description />
-    </div>
+    </Main>
   );
 }
