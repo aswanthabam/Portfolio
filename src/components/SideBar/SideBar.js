@@ -6,7 +6,7 @@ export default function SideBar({menuState,toggleMenu})
   return (
     <div className={menuState ? 'sidebar menu-opened' : 'sidebar'}>
       <div className="sidebar-menu">
-        { menuState && <Menu/> }
+         { menuState && <Menu/> }
       </div>
     </div>
   );
