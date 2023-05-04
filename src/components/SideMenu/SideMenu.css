@@ -1,0 +1,23 @@
+.sidemenu {
+    display: flex;
+    width: 3.5vw;
+    height: 40vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: rgba(104, 123, 131, 0.76);
+    border-radius: 50px;
+    position: fixed;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+}
+.sidemenu a {
+    color: #fff;
+    text-decoration: none;
+}
+.sidemenu a i.bx {
+    font-size: 1.6vw;
+    margin: 2.5vh 0 2.5vh 0;
+}

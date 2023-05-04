@@ -1,14 +1,12 @@
-import TopBar from '../TopBar/TopBar';
-import './Main.css';
+import { Component } from "react";
 
-export default function Main({children}) {
-
-    return (
-        <div className='main'>
-            <TopBar>
-
-            </TopBar>
-            {children}
-        </div>
-    );
+class Main extends Component {
+    state = {}
+    render() { 
+        return <div className="main">
+            {this.props.children}
+        </div>;
+    }
 }
+ 
+export default Main;

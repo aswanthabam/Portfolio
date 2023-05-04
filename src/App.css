@@ -1,10 +1,10 @@
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Cabin', sans-serif;
+  font-family: 'Abel', sans-serif;
 }
 :root{
-  --bg: #21272F;
+  --bg: #26373F;
   --text: #fff;
   --accent: #13CA8C;
   --accent2: #139fca;
@@ -12,4 +12,7 @@
 body {
   background: var(--bg);
   color: var(--text);
+}
+html{
+  scroll-behavior: smooth;
 }

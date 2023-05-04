@@ -1,0 +1,56 @@
+.header {
+    position: relative;
+    width: 100%;
+    height: calc(100% - 100px);
+    margin-top: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header > div {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+.header .me {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.header .me img {
+    width: 40.01vw;
+    height: 38.589vw;
+}
+.header .description .title {
+    font-family: 'Bungee Shade';
+    font-size: 3vw;
+    line-height: 72px;
+    font-style: normal;
+    font-weight: 400;
+}
+.header .description span {
+    display: block;
+    font-size: 25px;
+    line-height: 30px;
+    margin-top: 2.5vh;
+}
+.header .description .buttons {
+    width: calc(100% - 4vw);
+    margin: 6.2vh 4vw 0 0vw;
+    display: flex;
+    justify-content: start;
+}
+.header .description .buttons a {
+    display: block;
+    display: flex;
+    align-items: center;
+    width: auto;
+    padding: 0 30px 0 30px;
+    height: 50px;
+    color: #AC0E0E;
+    text-decoration: none;
+    background: white;
+    border-radius: 30px;
+    margin-right: 2vw;
+}

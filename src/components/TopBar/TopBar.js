@@ -1,32 +1,29 @@
-import './TopBar.css';
-import {Link} from "react-router-dom";
-export default function TopBar() {
-    return (
-        <div className='topbar'>
-            <div className="topbar-header">
-                <i class="bi bi-braces"></i>
-                <span>Portfolio</span>
-            </div>
-            <div className="topbar-menu">
-                <div className="menu-item selected">
-                    <Link to="/">Home</Link>
+import { Component } from "react";
+import "./TopBar.css"
+class TopBar extends Component {
+    state = { }
+    render() { 
+        return <div className="topbar">
+            <div className="container">
+                <div className="left">
+                    {/* <div className="menu_icon">
+                        <i class="bx bx-menu"></i>
+                    </div> */}
+                    <div className="menu_texts">
+                        <a href="#home">Home</a>
+                        <a href="#about">About</a>
+                        <a href="#projects">Projects</a>
+                        <a href="#contact">Contact</a>
+                    </div>
                 </div>
-                <div className="menu-item">
-                    <Link to="/projects">Projects</Link>
+                <div className="icons">
+                    <i className="bx bxl-youtube"></i>
+                    <i className="bx bxl-instagram"></i>
+                    <i className="bx bxl-linkedin"></i>
                 </div>
-                <div className="menu-item">
-                    <Link to="/about">About</Link>
-                </div>
             </div>
-            <div className="topbar-search">
-                <i class="bi bi-search"></i>
-                <div className="topbar-search-triangle"></div>
-                <input className="topbar-search-input" type="text" placeholder="Search..."/>
-                <button className="topbar-search-submit">Search</button>
-            </div>
-            <div className="topbar-menu-icon">
-                <i className='bi bi-list'></i>
-            </div>
-        </div>
-    )
+        </div>;
+    }
 }
+ 
+export default TopBar;
