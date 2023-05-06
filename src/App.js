@@ -1,8 +1,10 @@
 import './App.css';
+import About from './components/About/About';
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';
 import Page from './components/Page/Page';
 import SideMenu from './components/SideMenu/SideMenu';
+import Skills from './components/Skills/Skills';
 import TopBar from './components/TopBar/TopBar';
 
 function App() {
@@ -10,17 +12,20 @@ function App() {
     <div className="App">
       <Main>
         <SideMenu></SideMenu>
-        <Page num={1} id="home">
+        <Page num={1} id="home" fixedHeight>
           <TopBar></TopBar>
           <Header></Header>
         </Page>
-        <Page num={2} id="about" blurred>
-          Page 2
+        <Page num={2} id="about" blurred fixedHeight>
+          <About/>
         </Page>
-        <Page num={3} id="projects" blurred>
+        <Page num={3} id="skills" blurred fixedHeight>
+          <Skills />
+        </Page>
+        <Page num={4} id="projects" blurred fixedHeight>
           Page 3
         </Page>
-        <Page num={4} id="contact" blurred>
+        <Page num={5} id="contact" blurred fixedHeight>
           Page 4
         </Page>
       </Main>

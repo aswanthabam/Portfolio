@@ -8,18 +8,23 @@
     align-items: center;
     justify-content: center;}
 .topbar .container {
-    width: calc(100% - 200px);
+    width: calc(100% - 400px);
     height: auto;
-    margin: 0 100px 0 100px;
+    margin: 0 200px 0 200px;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
+
 .topbar .container .left .menu_texts a {
-    margin-right: 20px;
+    margin-right: 40px;
     color: #fff;
     text-decoration: none;
-    font-size: normal;
+    font-size: 20px;
+    transition: all 0.5s ease;
+}
+.topbar .container .left .menu_texts a:hover {
+    color: #cd3a3a;
 }
 .topbar .container .icons i.bx {
     margin-left: 20px;

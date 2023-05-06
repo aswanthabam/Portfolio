@@ -1,26 +1,30 @@
 .header {
     position: relative;
-    width: 100%;
+    width: calc(100% - 300px);
     height: calc(100% - 100px);
-    margin-top: 100px;
+    margin: 100px 150px 0 150px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-.header > div {
+
+.header .me {
     width: 50%;
     height: 100%;
-    display: flex;
-    align-items: center;
-}
-.header .me {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .header .me img {
-    width: 40.01vw;
-    height: 38.589vw;
+    width: 35vw;
+}
+.header .description {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 .header .description .title {
     font-family: 'Bungee Shade';
@@ -35,6 +39,13 @@
     line-height: 30px;
     margin-top: 2.5vh;
 }
+.header .description p {
+    font-size: 17px;
+    line-height: 22px;
+    color: #fdfdfd90;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
 .header .description .buttons {
     width: calc(100% - 4vw);
     margin: 6.2vh 4vw 0 0vw;
@@ -48,9 +59,14 @@
     width: auto;
     padding: 0 30px 0 30px;
     height: 50px;
-    color: #AC0E0E;
+    color: #cd3a3a;
     text-decoration: none;
     background: white;
     border-radius: 30px;
     margin-right: 2vw;
+    transition: all 0.5s ease;
+}
+.header .description .buttons a:hover {
+    background: #cd3a3a;
+    color: #fff;
 }

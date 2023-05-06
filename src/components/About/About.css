@@ -1,0 +1,22 @@
+.about {
+    width: calc(100% - 400px);
+    height: 100%;
+    margin: 0 200px 0 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about div {
+    width: 100%;
+    height: auto;
+}
+.about p {
+    font-size: 25px;
+    line-height: 37px;
+    color: #fdfdfd99;
+}
+.about p span {
+    font-size: 60px;
+    color: #fdfdfd;
+    font-family: 'Saira Stencil One',monospace;
+}

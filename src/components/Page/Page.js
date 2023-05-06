@@ -4,10 +4,12 @@ import bg from "../../images/star-trails-1846734_1920.jpg"
 class Page extends Component {
     state = {}
     render() { 
-        return <div className={"page page-"+this.props.num} id={this.props.id}>
-            <img className={"background"+(this.props.blurred ? " blurred" : "")} src={bg}></img>
+        return (
+        <div className={"page page-"+this.props.num+(this.props.blurred ? " blurred" : " normal")+(this.props.fixedHeight?" fixed":"")} id={this.props.id}>
+            <div className="bg"></div>
+            <img className={"background"+(this.props.blurred ? " blurred" : " normal")} src={bg}></img>
             {this.props.children}
-        </div>;
+        </div>);
     }
 }
  
