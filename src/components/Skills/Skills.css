@@ -1,0 +1,71 @@
+.skills {
+    width: 100%;
+    height: 100%;
+}
+.skills h2.title {
+    margin-top: 50px;
+    font-size: 30px;
+    height: 60px;
+    margin-left: 100px;
+    text-align: center;
+    width: fit-content;
+    font-family: 'Audiowide', cursive;
+    font-weight: 500;
+}
+
+h2.underline {
+    position: relative;
+}
+h2.underline::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 5px;
+    background: #2884D8;
+}
+.skills .skill-box {
+    position: relative;
+    width: calc(100% - 400px);
+    height: calc(100% - 200px);
+    margin: 50px 200px 150px 200px;
+}
+.skill-bubble:nth-child(1), .skill-bubble:nth-child(2), .skill-bubble:nth-child(3) {
+    position: absolute;
+    top: 100px;
+}
+.skill-bubble:nth-child(1) {
+    left: 100px;
+}
+.skill-bubble:nth-child(2) {
+    left: 50%;
+}
+.skill-bubble:nth-child(3) {
+    left: calc(100% - 100px);
+}
+.skill-bubble:nth-child(4) , .skill-bubble:nth-child(5) {
+    position: absolute;
+    top: 50%;
+    animation-delay: .25s !important;
+}
+.skill-bubble:nth-child(4) {
+    left: calc(25% + 50px);
+}
+.skill-bubble:nth-child(5) {
+    left: calc(75% - 50px);
+}
+.skill-bubble:nth-child(6), .skill-bubble:nth-child(7), .skill-bubble:nth-child(8) {
+    position: absolute;
+    top: calc(100% - 100px);
+    animation-delay: .5s !important;
+}
+.skill-bubble:nth-child(6) {
+    left: 100px;
+}
+.skill-bubble:nth-child(7) {
+    left: 50%;
+}
+.skill-bubble:nth-child(8) {
+    left: calc(100% - 100px);
+}

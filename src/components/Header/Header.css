@@ -17,6 +17,7 @@
 }
 .header .me img {
     width: 35vw;
+    pointer-events: none;
 }
 .header .description {
     width: 50%;

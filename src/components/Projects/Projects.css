@@ -1,0 +1,16 @@
+.projects {
+    width: calc(100% - 400px);
+    height: auto;
+    min-height: 100vh;
+    margin: 0 200px 0 200px;
+}
+.projects h2.title {
+    width: fit-content;
+    margin-top: 50px;
+    font-size: 30px;
+    height: 60px;
+    text-align: center;
+    width: fit-content;
+    font-family: 'Audiowide', cursive;
+    margin-bottom: 50px;
+}

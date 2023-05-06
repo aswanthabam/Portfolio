@@ -1,0 +1,36 @@
+.skill-bubble {
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(50% 50% at 50% 50%, #687B83 0%, rgba(59, 87, 99, 0) 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #fdfdfd;
+    opacity: 0;
+    transition: all 0.5s ease;
+    transform: translate(-50%,-50%);
+}
+
+.skill-bubble i {
+    font-size: 70px;
+    margin-bottom: 10px;
+}
+
+.skill-bubble h2.head {
+    font-size: 25px;
+    font-weight: 400;
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+.skill-bubble.visible {
+    animation: 1s fadein ease forwards;
+    transition: all 0.5s ease;
+}
