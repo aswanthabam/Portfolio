@@ -1,5 +1,7 @@
 import './App.css';
 import About from './components/About/About';
+import Contact from './components/Contact/Contact';
+import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
 import Main from './components/Main/Main';
 import Page from './components/Page/Page';
@@ -27,8 +29,9 @@ function App() {
           <Projects/>
         </Page>
         <Page num={5} id="contact" blurred fixedHeight>
-          Page 4
+          <Contact/>
         </Page>
+        <Footer/>
       </Main>
     </div>
   );

@@ -1,0 +1,54 @@
+.contact {
+    width: calc(100% - 400px);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 220px 20px 220px;
+    margin-left: -20px;
+    margin-top: -20px;
+    color: #ffffff;
+    flex-direction: column;
+    background-color: #26373F;
+    position: relative;
+
+}
+.contact form {
+    z-index: 1;
+}
+.contact h2 {
+    margin-bottom: 40px;
+    font-size: 50px;
+    font-family: 'Saira Stencil One';
+    font-weight: 400;
+    margin-top: 50px;
+}
+.contact form .name {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 40px;
+}
+.contact form input, .contact form textarea, .contact form button {
+    width: 100%;
+    height: 30px;
+    font-size: 20px;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 1px 1px 5px #ffffff50;
+    margin-bottom: 20px;
+    background-color: #fdfdfd10;
+    padding: 10px;
+    color: white;
+}
+.contact form textarea {
+    height: 250px;
+}
+.contact form button {
+    width: 100%;
+    height: 50px;
+    padding: 0 40px 0 40px;
+    background: #00ffcc50;
+    font-size: 20px;
+}
+

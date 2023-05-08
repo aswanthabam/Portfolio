@@ -1,0 +1,50 @@
+.footer {
+    width: calc(100% - 400px);
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 30% 30% 40%;
+    column-gap: 20px;
+    padding: 0 200px 0 200px;
+    background: #12121250;
+    position: relative;
+}
+.footer .one, .footer .two {
+    display: flex;
+    align-items: start;
+    justify-content:center;
+    flex-direction: column;
+}
+.footer a {
+    color: #fff;
+    font-size: 18px;
+    text-decoration: underline;
+    margin: 20px;
+    transition: all 0.5s ease;
+}
+.footer a:hover {
+    color: bisque;
+
+}
+.footer .three {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.footer .three .content {
+    width: auto;
+    height: auto;
+    padding: 20px;
+    border-left: 3px solid #0fc;
+}
+.footer .three img {
+    width: 200px;
+    height: 200px;
+}
+.footer .tail {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 10px;
+}
