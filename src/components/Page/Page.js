@@ -5,7 +5,7 @@ class Page extends Component {
     state = {}
     render() { 
         return (
-        <div className={"page page-"+this.props.num+(this.props.blurred ? " blurred" : " normal")+(this.props.fixedHeight?" fixed":"")} id={this.props.id}>
+        <div className={"page page-"+this.props.num+(this.props.blurred ? " blurred" : " normal")+(this.props.fixedHeight?" fixed":"")+(this.props.min ? " min" : "")} id={this.props.id}>
             <div className="bg"></div>
             <img className={"background"+(this.props.blurred ? " blurred" : " normal")} src={bg}></img>
             {this.props.children}

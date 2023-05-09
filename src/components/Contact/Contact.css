@@ -35,11 +35,14 @@
     outline: none;
     border: none;
     border-radius: 10px;
-    box-shadow: 1px 1px 5px #ffffff50;
+    box-shadow: 0px 0px 5px #ffffff50;
     margin-bottom: 20px;
     background-color: #fdfdfd10;
     padding: 10px;
     color: white;
+}
+.contact form input:focus, .contact form textarea:focus {
+    box-shadow: 0 0 5px lightblue;
 }
 .contact form textarea {
     height: 250px;
@@ -52,3 +55,19 @@
     font-size: 20px;
 }
 
+@media only screen and (max-width: 767px) {
+    /* Mobile  */
+    .contact {
+        width: calc(100% - 50px);
+        padding: 20px 55px 20px 35px;
+    }
+    .contact h2 {
+        font-size: 25px;
+    }
+    .contact form input, .contact form textarea, .contact form button { 
+        font-size: 13px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 1023px){
+    /* Tablets */
+}

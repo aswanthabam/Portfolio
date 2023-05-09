@@ -5,6 +5,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    min-height: 100vh;
 }
 .about div {
     width: 100%;
@@ -19,4 +20,29 @@
     font-size: 60px;
     color: #fdfdfd;
     font-family: 'Saira Stencil One',monospace;
+}
+@media only screen and (max-width: 767px) {
+    /* Mobile  */
+    .about {
+        width: calc(100% - 10px);
+        margin: 0 5px 0 5px;
+        min-height: auto;
+       padding: 20px 0 20px 0;
+    }
+    .about p {
+        font-size: 15px;
+        line-height: 19px;
+    }
+    .about p span {
+        font-size: 40px;
+    }
+}
+@media only screen and (min-width:768px) and (max-width: 1023px) {
+    /* Tablets */
+    .about {
+        width: calc(100% - 100px);
+        margin: 0 50px 0 50px;
+        min-height: auto;
+        padding: 20px 0 20px 0;
+    }
 }

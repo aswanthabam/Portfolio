@@ -19,7 +19,7 @@ function App() {
           <TopBar></TopBar>
           <Header></Header>
         </Page>
-        <Page num={2} id="about" blurred fixedHeight>
+        <Page num={2} id="about" blurred >
           <About/>
         </Page>
         <Page num={3} id="skills" blurred fixedHeight>

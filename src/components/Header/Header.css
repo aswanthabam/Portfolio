@@ -71,3 +71,59 @@
     background: #cd3a3a;
     color: #fff;
 }
+@media only screen and (max-width: 767px) {
+    /* Mobile */
+   .header {
+    width: calc(100% - 10px);
+    height: calc(100% - 70px);
+    margin: 70px 5px 0 5px;   
+    flex-direction: column;
+   } 
+   .header .me, .header .description {
+    width: 100%;
+    height: auto;
+   }
+   .header .me {
+    margin-top: 0px;
+   } 
+   .header .description {
+    margin-top: 20px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+   }
+   .header .me img {
+    width: 250px;
+    bottom: 0;
+   }
+   .header .description .title {
+    font-size: 33px;
+    line-height: 37px;
+   }
+   .header .description span {
+    margin-top: 10px;
+    font-size: 20px;
+   }
+   .header .description p {
+    font-size: 16px;
+    line-height: 20px;
+    margin-top: 10px;
+   }
+   .header .description .buttons {
+    width: 100%;
+    margin: 0;
+    justify-content: center;
+   }
+   .header .description .buttons a {
+    padding: 0 20px 0 20px;
+    height: 40px;
+   }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    /* Tablets */
+    .header {
+        width: calc(100% - 100px);
+        margin: 0 50px 0 50px;
+    }
+}

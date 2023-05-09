@@ -14,6 +14,7 @@ class TopBar extends Component {
                         <a href="#about">About</a>
                         <a href="#projects">Projects</a>
                         <a href="#contact">Contact</a>
+                        <span><i className='bi bi-list'></i></span>
                     </div>
                 </div>
                 <div className="icons">

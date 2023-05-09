@@ -34,3 +34,15 @@
     animation: 1s fadein ease forwards;
     transition: all 0.5s ease;
 }
+@media only screen and (max-width: 767px) {
+    .skill-bubble {
+        width: 130px;
+        height: 130px;
+    }
+    .skill-bubble i {
+        font-size: 45px;
+    }
+    .skill-bubble h2.head {
+        font-size: 18px;
+    }
+}
