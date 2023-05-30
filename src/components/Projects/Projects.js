@@ -1,37 +1,36 @@
 import { Component } from 'react';
 import './Projects.css'
 import ProjectView from '../ProjectView/ProjectView';
-
+import axios from 'axios'
 class Projects extends Component {
-    state = { }
+    state = { loaded:false,failed:false}
+    componentDidMount() {
+        axios.get("https://avctechbackend.vercel.app/api/projects/get",{}).then(res=>{
+            if(res.data.status == 200)
+                this.setState({
+                    ...this.state,
+                    loaded:true,
+                    data:res.data.content
+                })
+            else this.setState({
+                ...this.state,
+                loaded:true,
+                failed:true
+            })
+        })
+    }
     render() { 
         return (
             <div className='projects'>
                 <h2 className='underline title'>Projects</h2>
                 <div className='container'>
-                    <ProjectView title='AVC Manager' icon='bx bxl-react'>
-                        <p>
-                        AVC Manager is a user-friendly Android app that optimizes device performance by freeing
-up storage space and streamlining activities. With features like Space Cleanup and
-WhatsApp status saving, AVC Manager is a must-have tool for anyone looking to improve
-their device's efficiency.
-                        </p>
-                    </ProjectView>
-                    <ProjectView title='Vijnana Website' icon='bx bxl-android'>
-                        <p>
-                            Commodo eiusmod anim id minim consequat et ipsum reprehenderit. Exercitation ut cupidatat commodo veniam. Consectetur et nisi exercitation officia. Labore consequat ad dolore ex fugiat excepteur. Minim aliquip ut ullamco ut ipsum dolor ad nisi aliquip duis duis dolore. Laborum do eu esse commodo cillum enim consequat sint labore et et.
-                        </p>
-                    </ProjectView>
-                    <ProjectView title='RoboCAR' icon='bx bxl-android'>
-                        <p>
-                            Commodo eiusmod anim id minim consequat et ipsum reprehenderit. Exercitation ut cupidatat commodo veniam. Consectetur et nisi exercitation officia. Labore consequat ad dolore ex fugiat excepteur. Minim aliquip ut ullamco ut ipsum dolor ad nisi aliquip duis duis dolore. Laborum do eu esse commodo cillum enim consequat sint labore et et.
-                        </p>
-                    </ProjectView>
-                    <ProjectView title='Treasure Tracker' icon='bx bxl-react'>
-                        <p>
-                            Commodo eiusmod anim id minim consequat et ipsum reprehenderit. Exercitation ut cupidatat commodo veniam. Consectetur et nisi exercitation officia. Labore consequat ad dolore ex fugiat excepteur. Minim aliquip ut ullamco ut ipsum dolor ad nisi aliquip duis duis dolore. Laborum do eu esse commodo cillum enim consequat sint labore et et.
-                        </p>
-                    </ProjectView>
+                    {this.state.loaded ? (this.state.failed ? "Failed to load data" : this.state.data.projects.map(x => 
+                        <ProjectView title={x.name} icon='bx bxl-react'>
+                            <p>
+                            {x.description}
+                            </p>
+                        </ProjectView>
+                    )) : "loading"}
                 </div>
             </div>
         );
