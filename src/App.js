@@ -1,5 +1,6 @@
 import './App.css';
 import About from './components/About/About';
+import Activities from './components/Activities/Activities';
 import Contact from './components/Contact/Contact';
 import Footer from './components/Footer/Footer';
 import Header from './components/Header/Header';
@@ -25,10 +26,13 @@ function App() {
         <Page num={3} id="skills" blurred fixedHeight>
           <Skills />
         </Page>
-        <Page num={4} id="projects" blurred >
+        <Page num={4} id="activity" blurred >
+          <Activities/>
+        </Page>
+        <Page num={5} id="projects" blurred >
           <Projects/>
         </Page>
-        <Page num={5} id="contact" blurred fixedHeight>
+        <Page num={6} id="contact" blurred fixedHeight>
           <Contact/>
         </Page>
         <Footer/>

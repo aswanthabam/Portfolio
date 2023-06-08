@@ -1,0 +1,96 @@
+.activities {
+    min-height: 100vh;
+    width: calc(100% - 400px);
+    height: auto;
+    min-height: 100vh;
+    margin: 0 200px 0 200px;
+    --wave-length: 290px;
+}
+
+.activities .content {
+    position: relative;
+    width: 100%;
+    height: auto;
+}
+.activities h2.title {
+    width: fit-content;
+    margin-top: 50px;
+    font-size: 30px;
+    height: 60px;
+    text-align: center;
+    width: fit-content;
+    font-family: 'Audiowide', cursive;
+    margin-bottom: 50px;
+    font-weight: 400;
+}
+.activities .content .line-container {
+    width: 100%;
+    position: absolute;
+    text-align: center;
+}
+.activities .content svg{
+    /* position: absolute; 
+    left: 50%;*/
+    overflow: visible;
+}
+
+.activities .content .activities-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 100%;
+    height: auto;
+}
+.activities .content .activities-container .left {
+    display: flex;
+    align-items: end;
+    flex-direction: column;
+}
+.activities .content .activities-container .left .activity span {
+    text-align: end;
+}
+
+.activities .content .activities-container .activity-none {
+    height: var(--wave-length);
+}
+.activities .content .activity {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 500px;
+    height: var(--wave-length);
+    opacity: 0;
+    transition: all 0.5s ease;
+}
+.activities .content .activity span {
+    display: block;
+}
+.activities .content .activity span.date {
+    font-family: 'Audiowide';
+    color: #4A8395;
+    font-size: 17px;
+    margin-bottom: 10px;
+}
+.activities .content .activity span.title {
+    font-family: 'Audiowide';
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.activities .content .activities-container .left .activity span.description {
+    text-align: justify !important;
+    text-align-last: right;
+}
+.activities .content .activity span.description {
+    font-family: 'Syne Mono';
+    color: #ffffff90;
+    font-size: 15px;
+    text-align: justify;
+}
+.activities .content .line-container .circle1,
+.activities .content .line-container .circle1,
+.activities .content .line-container .circle1,
+.activities .content .line-container .circle1
+{
+    opacity: 0;
+    transition: all 0.5s ease;
+}

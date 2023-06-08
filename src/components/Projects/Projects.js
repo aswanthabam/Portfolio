@@ -25,7 +25,7 @@ class Projects extends Component {
                 <h2 className='underline title'>Projects</h2>
                 <div className='container'>
                     {this.state.loaded ? (this.state.failed ? "Failed to load data" : this.state.data.projects.map(x => 
-                        <ProjectView title={x.name} icon='bx bxl-react'>
+                        <ProjectView title={x.name} icon={x.fontIcon}>
                             <p>
                             {x.description}
                             </p>
