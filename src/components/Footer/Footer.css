@@ -11,7 +11,7 @@
 }
 .footer .one, .footer .two {
     display: flex;
-    align-items: start;
+    align-items: flex-start;
     justify-content:center;
     flex-direction: column;
     width: 100%;

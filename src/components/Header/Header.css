@@ -51,7 +51,7 @@
     width: calc(100% - 4vw);
     margin: 6.2vh 4vw 0 0vw;
     display: flex;
-    justify-content: start;
+    justify-content: flex-start;
 }
 .header .description .buttons a {
     display: block;
