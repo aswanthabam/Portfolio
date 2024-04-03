@@ -6,7 +6,7 @@ class Projects extends Component {
     state = { loaded:false,failed:false}
     componentDidMount() {
         axios.get("https://avctechbackend.vercel.app/api/projects/get",{}).then(res=>{
-            if(res.data.status == 200)
+            if(res.data.status === 200)
                 this.setState({
                     ...this.state,
                     loaded:true,
