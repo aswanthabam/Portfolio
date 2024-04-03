@@ -10,7 +10,7 @@ import Projects from './components/Projects/Projects';
 import SideMenu from './components/SideMenu/SideMenu';
 import Skills from './components/Skills/Skills';
 import TopBar from './components/TopBar/TopBar';
-
+// Main APP
 function App() {
   return (
     <div className="App">
