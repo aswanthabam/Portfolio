@@ -3,7 +3,6 @@
 
 
 .firebase/
-.github/
 
 /node_modules
 /.pnp
