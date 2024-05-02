@@ -2,7 +2,7 @@
     "hosting": [
       {
         "site": "aswanthvc-dev",
-        "public": "build",
+        "public": "_site",
         "ignore": [
           "firebase.json",
           "**/.*",
