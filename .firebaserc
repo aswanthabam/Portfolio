@@ -1,0 +1,24 @@
+{
+  "projects": {
+    "default": "aswanthvc1"
+  },
+  "targets": {
+    "aswanthvc1": {
+      "hosting": {
+        "aswanthvc": [
+          "aswanthvc"
+        ],
+        "aswanth": [
+          "aswanth"
+        ],
+        "aswanthvc1": [
+          "aswanthvc1"
+        ],
+        "aswanth-vc": [
+          "aswanth-vc"
+        ]
+      }
+    }
+  },
+  "etags": {}
+}
