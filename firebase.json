@@ -1,8 +1,53 @@
 {
     "hosting": [
       {
+        "site": "aswanthvc-dev",
+        "public": "_site",
+        "ignore": [
+          "firebase.json",
+          "**/.*",
+          "**/node_modules/**"
+        ],
+        "rewrites": [
+          {
+            "source": "**",
+            "destination": "/index.html"
+          }
+        ]
+      },
+      {
         "site": "aswanthvc1",
-        "public": "build",
+        "public": "_site",
+        "ignore": [
+          "firebase.json",
+          "**/.*",
+          "**/node_modules/**"
+        ],
+        "rewrites": [
+          {
+            "source": "**",
+            "destination": "/index.html"
+          }
+        ]
+      },
+      {
+        "site": "aswanthvc",
+        "public": "_site",
+        "ignore": [
+          "firebase.json",
+          "**/.*",
+          "**/node_modules/**"
+        ],
+        "rewrites": [
+          {
+            "source": "**",
+            "destination": "/index.html"
+          }
+        ]
+      },
+      {
+        "site": "aswanth",
+        "public": "_site",
         "ignore": [
           "firebase.json",
           "**/.*",
