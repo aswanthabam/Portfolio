@@ -1,0 +1,20 @@
+
+* {
+  margin: 0;
+  padding: 0;
+}
+$background: #222;
+$text: #fff;
+$primary: #0FC5D1;
+body {
+  font-family: "Khand", sans-serif;
+  width: 100vw;
+  height: 100vh;
+  overflow: auto;
+  background: $background;
+  color: $text;
+}
+a {
+  color: $text;
+  text-decoration: underline;
+}

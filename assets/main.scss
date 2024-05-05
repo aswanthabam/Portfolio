@@ -1,0 +1,66 @@
+---
+---
+
+@import "typography";
+
+.topbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100px;
+
+    .menu-items {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 100px;
+
+        a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 27px;
+
+            &.current {
+                color: $primary;
+            }
+        }
+    }
+}
+.main {
+    width: 100vw;
+    height: 100vh;
+    overflow: auto;
+    z-index: 2;
+}
+.bg {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background: url({{ '/assets/bg.svg' | relative_url }});
+}
+
+@media only screen and (max-width: 768px){
+    .bg {
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-size: cover;
+        background-repeat: repeat-y;
+        background: url({{ '/assets/bg.svg' | relative_url }});
+    }
+}
