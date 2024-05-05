@@ -2,4 +2,4 @@
 layout: default
 title: Home
 ---
-mycontent
+Home Page
