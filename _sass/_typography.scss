@@ -1,11 +1,9 @@
 
+@import "global.scss";
 * {
   margin: 0;
   padding: 0;
 }
-$background: #222;
-$text: #fff;
-$primary: #0FC5D1;
 body {
   font-family: "Khand", sans-serif;
   width: 100vw;
@@ -17,4 +15,27 @@ body {
 a {
   color: $text;
   text-decoration: underline;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #00000000;
+  box-shadow: none;
+  border: none;
+  outline: none;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #0fc5d150;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: $primary;
 }
