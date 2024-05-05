@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>[{{page.title}}] Aswanth V C - Portfolio</title>
+    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Khand:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    {% if page.url == "/" %}
+    <link rel="stylesheet" href="{{ '/assets/home.css' | relative_url }}" />
+    {% endif %}
+  </head>
+  <body>
+    <div class="main">
+      <div class="topbar">{% include topbar.html %}</div>
+      <div class="content">{{content}}</div>
+    </div>
+    <div class="bg"></div>
+  </body>
+</html>

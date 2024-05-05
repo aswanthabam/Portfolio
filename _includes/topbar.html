@@ -1,0 +1,12 @@
+<div class="topbar">
+  <div class="menu-items">
+    {% for item in site.data.menu %}
+    <a
+      href="{{ item.url }}"
+      class="{% if page.url == item.url %}current{% endif %}"
+      >{% if page.url == item.url %}[ {{ item.name }} ]{% else %}{{item.name}}{%
+      endif %}</a
+    >
+    {% endfor %}
+  </div>
+</div>
