@@ -51,7 +51,7 @@ title: Home
         </div>
             <div class="socials">
                 {% for item in site.data.socials %}
-                    <a href="{{item.url}}"><i class="{{item.icon}}"></i></a>
+                    <a href="{{item.url}}" target="_blank"><i class="{{item.icon}}"></i></a>
                 {% endfor %}
             </div>
         <div class="right">

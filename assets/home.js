@@ -12,7 +12,7 @@ window.onload = function () {
   });
   wrapper.style.width = curWidth + "px";
   gsap.to(".skill", {
-    duration: 15,
+    duration: 20,
     repeat: -1,
     ease: "none",
     x: `+=${wrapper.offsetWidth}`,
