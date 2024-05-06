@@ -1,0 +1,30 @@
+- name: React
+  icon: bx bxl-react
+
+- name: Node.js
+  icon: bx bxl-nodejs
+
+- name: MongoDB
+  icon: bx bxl-mongodb
+
+- name: Django
+  icon: bx bxl-django
+
+- name: Android
+  icon: bx bxl-android
+
+- name: Flutter
+  icon: bx bxl-flutter
+
+- name: Figma
+  icon: bx bxl-figma
+
+- name: Git
+  icon: bx bxl-git
+
+- name: Docker
+  icon: bx bxl-docker
+
+- name: Web3
+  icon: bx bx-cube-alt
+
