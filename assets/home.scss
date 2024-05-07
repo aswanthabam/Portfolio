@@ -220,6 +220,8 @@
     .page1 {
       height: calc(100vh - 60px);
       .head {
+        width: calc(100% - 20px) !important;
+        padding: 0 10px !important;
         height: calc(100vh - 180px) !important;
         .left {
           .myself {

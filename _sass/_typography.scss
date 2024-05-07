@@ -7,8 +7,8 @@
 body {
   font-family: "Khand", sans-serif;
   width: 100vw;
-  height: 100vh;
-  overflow: auto;
+  // height: 100vh;
+  overflow-x: hidden;
   background: $background;
   color: $text;
 }
