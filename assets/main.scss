@@ -57,6 +57,15 @@
   padding: 20px;
 }
 
+@media only screen and (max-width: 400px) {
+  .topbar {
+    height: 60px;
+    &.mobile {
+      height: 60px !important;
+    }
+  }
+}
+
 @media only screen and (max-width: 768px) {
   .bg {
     width: 100vw;

@@ -14,6 +14,7 @@ async function messageSlidesShow() {
 function skillsMarquee() {
   var skills = document.getElementsByClassName("skill");
   var wrapper = document.getElementById("skills");
+  var timeline = gsap.timeline();
   curWidth = 0;
   gsap.set(skills, {
     x: (index) => {
@@ -23,7 +24,7 @@ function skillsMarquee() {
     },
   });
   wrapper.style.width = curWidth + "px";
-  gsap.to(".skill", {
+  timeline.to(".skill", {
     duration: 20,
     repeat: -1,
     ease: "none",
@@ -32,6 +33,12 @@ function skillsMarquee() {
       x: gsap.utils.unitize((x) => parseFloat(x) % wrapper.offsetWidth), //force x value to be between 0 and 500 using modulus
     },
   });
+  wrapper.onmouseover = () => {
+    timeline.pause();
+  };
+  wrapper.onmouseout = () => {
+    timeline.play();
+  } ;
 }
 /* Recursive function for showing messages one after another */
 function showMessage(messages, index) {

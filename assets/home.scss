@@ -215,7 +215,46 @@
   }
 }
 
-@media only screen and (max-width: 750px) {
+@media only screen and (max-width: 400px) {
+  .home {
+    .page1 {
+      height: calc(100vh - 60px);
+      .head {
+        height: calc(100vh - 180px) !important;
+        .left {
+          .myself {
+            .salutation {
+              font-size: 20px;
+            }
+            .name {
+              font-size: 30px;
+            }
+            .description {
+              font-size: 12px;
+            }
+          }
+        }
+        .right {
+          .status {
+            gap: 5px;
+            img {
+              width: 20px;
+              height: 20px;
+            }
+            .message {
+              .msg {
+                font-size: 12px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
   .home {
     .page1 {
       height: calc(100vh - 100px);
@@ -253,6 +292,7 @@
           .status {
             flex-direction: row-reverse;
             .message {
+              justify-content: start;
               .msg {
                 text-align: left;
               }
