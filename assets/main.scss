@@ -25,6 +25,9 @@
       text-decoration: none;
       font-size: 20px;
 
+      &:hover {
+        color: $primary;
+      }
       &.current {
         color: $primary;
       }
@@ -105,15 +108,15 @@
         opacity: 0;
         left: 0;
         gap: 20px;
-        background: $primary;
+        background: $primary-dark;
         overflow: hidden;
         padding: 10px;
         #closeBtn {
           position: absolute;
           top: 20px;
           left: 20px;
-          font-size: 30px;
-          color: $background;
+          font-size: 20px;
+          color: $text;
         }
         .menu-items {
           margin-top: 50px;
@@ -124,9 +127,9 @@
           a {
             color: #fff;
             text-decoration: none;
-            font-size: 20px;
+            font-size: 17px;
             &.current {
-              color: #000;
+              color: $primary;
             }
           }
         }
