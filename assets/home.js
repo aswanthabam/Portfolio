@@ -1,9 +1,9 @@
-window.onload = function () {
+window.addEventListener("DOMContentLoaded", function () {
   gsap.registerPlugin(ScrollTrigger);
   skillsMarquee();
   messageSlidesShow();
-  console.log("loaded");
-};
+  console.log("home-loaded");
+});
 
 /* Show Messages as a slideshow on homescreen */
 async function messageSlidesShow() {
@@ -38,7 +38,7 @@ function skillsMarquee() {
   };
   wrapper.onmouseout = () => {
     timeline.play();
-  } ;
+  };
 }
 /* Recursive function for showing messages one after another */
 function showMessage(messages, index) {
