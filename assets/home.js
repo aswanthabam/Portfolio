@@ -1,7 +1,19 @@
 window.onload = function () {
+  gsap.registerPlugin(ScrollTrigger);
+  skillsMarquee();
+  messageSlidesShow();
+  console.log("loaded");
+};
+
+/* Show Messages as a slideshow on homescreen */
+async function messageSlidesShow() {
+  var messages = document.getElementsByClassName("msg");
+  showMessage(messages, 0);
+}
+/* Show Skills as a marquee on homescreen */
+function skillsMarquee() {
   var skills = document.getElementsByClassName("skill");
   var wrapper = document.getElementById("skills");
-  window.skills = wrapper;
   curWidth = 0;
   gsap.set(skills, {
     x: (index) => {
@@ -20,11 +32,8 @@ window.onload = function () {
       x: gsap.utils.unitize((x) => parseFloat(x) % wrapper.offsetWidth), //force x value to be between 0 and 500 using modulus
     },
   });
-
-  var messages = document.getElementsByClassName("msg");
-  showMessage(messages, 0);
-};
-
+}
+/* Recursive function for showing messages one after another */
 function showMessage(messages, index) {
   const reverseTimeline = gsap.timeline({
     onComplete: function () {

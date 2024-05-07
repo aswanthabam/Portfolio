@@ -10,6 +10,10 @@
   width: 100vw;
   height: 100px;
 
+  &.mobile {
+    display: none;
+  }
+
   .menu-items {
     display: flex;
     align-items: center;
@@ -30,7 +34,7 @@
 .main {
   width: 100%;
   height: 100vh;
-  overflow: auto;
+  overflow-x: hidden;
   z-index: 2;
 }
 .bg {
@@ -60,12 +64,39 @@
     position: fixed;
     top: 0;
     left: 0;
-    z-index: 0;
+    z-index: -1;
     display: flex;
     align-items: center;
     justify-content: center;
     background-size: cover;
     background-repeat: repeat-y;
     background: url({{"/assets/bg.svg"|relative_url}});
+  }
+  .topbar {
+    &.desktop {
+      display: none;
+    }
+    &.mobile {
+      width: calc(100% - 60px);
+      height: 100px;
+      padding: 0 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .menu-icon {
+        i {
+          font-size: 30px;
+          color: $text;
+        }
+      }
+      .socials {
+        display: flex;
+        gap: 10px;
+        i {
+          font-size: 20px;
+          color: $text;
+        }
+      }
+    }
   }
 }
