@@ -1,7 +1,20 @@
-window.onload = function () {
+window.addEventListener("DOMContentLoaded", function () {
+  gsap.registerPlugin(ScrollTrigger);
+  skillsMarquee();
+  messageSlidesShow();
+  console.log("home-loaded");
+});
+
+/* Show Messages as a slideshow on homescreen */
+async function messageSlidesShow() {
+  var messages = document.getElementsByClassName("msg");
+  showMessage(messages, 0);
+}
+/* Show Skills as a marquee on homescreen */
+function skillsMarquee() {
   var skills = document.getElementsByClassName("skill");
   var wrapper = document.getElementById("skills");
-  window.skills = wrapper;
+  var timeline = gsap.timeline();
   curWidth = 0;
   gsap.set(skills, {
     x: (index) => {
@@ -11,7 +24,7 @@ window.onload = function () {
     },
   });
   wrapper.style.width = curWidth + "px";
-  gsap.to(".skill", {
+  timeline.to(".skill", {
     duration: 20,
     repeat: -1,
     ease: "none",
@@ -20,11 +33,14 @@ window.onload = function () {
       x: gsap.utils.unitize((x) => parseFloat(x) % wrapper.offsetWidth), //force x value to be between 0 and 500 using modulus
     },
   });
-
-  var messages = document.getElementsByClassName("msg");
-  showMessage(messages, 0);
-};
-
+  wrapper.onmouseover = () => {
+    timeline.pause();
+  };
+  wrapper.onmouseout = () => {
+    timeline.play();
+  };
+}
+/* Recursive function for showing messages one after another */
 function showMessage(messages, index) {
   const reverseTimeline = gsap.timeline({
     onComplete: function () {

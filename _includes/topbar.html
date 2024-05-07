@@ -1,4 +1,4 @@
-<div class="topbar">
+<div class="topbar desktop">
   <div class="menu-items">
     {% for item in site.data.menu %}
     <a
@@ -8,5 +8,28 @@
       endif %}</a
     >
     {% endfor %}
+  </div>
+</div>
+<div class="topbar mobile">
+  <div id="menuBtn" class="menu-icon">
+    <i class="bx bx-menu-alt-left"></i>
+  </div>
+  <div class="socials">
+    {% for item in site.data.socials %}
+    <a href="{{item.url}}" target="_blank"><i class="{{item.icon}}"></i></a>
+    {% endfor %}
+  </div>
+  <div id="menu" class="menu">
+    <span id="closeBtn"> [x] close</span>
+    <div class="menu-items">
+      {% for item in site.data.menu %}
+      <a
+        href="{{ item.url }}"
+        class="{% if page.url == item.url %}current{% endif %}"
+        >{% if page.url == item.url %}[ {{ item.name }} ]{% else
+        %}{{item.name}}{% endif %}</a
+      >
+      {% endfor %}
+    </div>
   </div>
 </div>
