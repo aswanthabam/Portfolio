@@ -1,5 +1,6 @@
-- project: VoteChain
-  description: Votechain is a blockchain based e-voting system, by which we can revolutionize the voting system.
+- project: 
+  name: VoteChain
+  description: Votechain is a blockchain-based e-voting system, by which we can revolutionize the voting system.
   github:
     - name: Votechain 
       url: https://github.com/aswanthabam/VoteChain
@@ -8,7 +9,7 @@
     - name: votechain-chain
       url: https://github.com/aswanthabam/votechain-chain
   download:
-    - name: Votechain APp
+    - name: Votechain App
       url: https://google.com/
   image: /assets/images/projects/banner/votechain.jpeg
   date: 2019-12-01
@@ -24,3 +25,153 @@
     - web3
     - truffle
     - ganache
+
+- project: 
+  name: YourNextApp
+  description: An app for managing your daily tasks and schedules efficiently.
+  github:
+    - name: YourNextApp-frontend 
+      url: https://github.com/yourusername/YourNextApp-frontend
+    - name: YourNextApp-backend
+      url: https://github.com/yourusername/YourNextApp-backend
+  download:
+    - name: YourNextApp APK
+      url: https://example.com/yournextapp.apk
+  image: /assets/images/projects/banner/yournextapp.jpeg
+  date: 2020-05-15
+  skills:
+    - react
+    - nodejs
+    - mongodb
+    - docker
+    - android
+
+- project: 
+  name: Social Media Platform
+  description: A platform for users to connect and share content with each other.
+  github:
+    - name: social-media-frontend 
+      url: https://github.com/yourusername/social-media-frontend
+    - name: social-media-backend
+      url: https://github.com/yourusername/social-media-backend
+  download:
+    - name: Social Media App
+      url: https://example.com/socialmedia.apk
+  image: /assets/images/projects/banner/socialmedia.jpeg
+  date: 2021-03-20
+  skills:
+    - react
+    - nodejs
+    - mongodb
+    - docker
+    - git
+- project: 
+  name: Real-Time Chat Application
+  description: A real-time chat application where users can communicate instantly.
+  github:
+    - name: real-time-chat-frontend 
+      url: https://github.com/yourusername/real-time-chat-frontend
+    - name: real-time-chat-backend
+      url: https://github.com/yourusername/real-time-chat-backend
+  download:
+    - name: Chat App
+      url: https://example.com/chatapp.apk
+  image: /assets/images/projects/banner/chatapp.jpeg
+  date: 2022-01-10
+  skills:
+    - react
+    - nodejs
+    - socket.io
+    - docker
+
+- project: 
+  name: E-Commerce Website
+  description: An online platform for buying and selling products.
+  github:
+    - name: ecommerce-frontend 
+      url: https://github.com/yourusername/ecommerce-frontend
+    - name: ecommerce-backend
+      url: https://github.com/yourusername/ecommerce-backend
+  download:
+    - name: E-Commerce App
+      url: https://example.com/ecommerceapp.apk
+  image: /assets/images/projects/banner/ecommerce.jpeg
+  date: 2022-05-20
+  skills:
+    - react
+    - nodejs
+    - mongodb
+    - django
+
+- project: 
+  name: Expense Tracker
+  description: A web application to track expenses and manage budgets.
+  github:
+    - name: expense-tracker 
+      url: https://github.com/yourusername/expense-tracker
+  download:
+    - name: Expense Tracker App
+      url: https://example.com/expensetracker.apk
+  image: /assets/images/projects/banner/expensetracker.jpeg
+  date: 2023-02-15
+  skills:
+    - react
+    - nodejs
+    - mongodb
+
+
+- project: 
+  name: Blogging Platform
+  description: A platform for users to create and share blog posts.
+  github:
+    - name: blogging-platform-frontend 
+      url: https://github.com/yourusername/blogging-platform-frontend
+    - name: blogging-platform-backend
+      url: https://github.com/yourusername/blogging-platform-backend
+  download:
+    - name: Blogging App
+      url: https://example.com/bloggingapp.apk
+  image: /assets/images/projects/banner/bloggingplatform.jpeg
+  date: 2023-08-10
+  skills:
+    - react
+    - nodejs
+    - mongodb
+
+- project: 
+  name: Task Management System
+  description: A system for organizing tasks, assigning them to team members, and tracking progress.
+  github:
+    - name: task-management-frontend 
+      url: https://github.com/yourusername/task-management-frontend
+    - name: task-management-backend
+      url: https://github.com/yourusername/task-management-backend
+  download:
+    - name: Task Management App
+      url: https://example.com/taskmanagementapp.apk
+  image: /assets/images/projects/banner/taskmanagement.jpeg
+  date: 2023-11-20
+  skills:
+    - react
+    - nodejs
+    - mongodb
+
+- project: 
+  name: Recipe Sharing Platform
+  description: A platform for users to discover, share, and save recipes.
+  github:
+    - name: recipe-platform-frontend 
+      url: https://github.com/yourusername/recipe-platform-frontend
+    - name: recipe-platform-backend
+      url: https://github.com/yourusername/recipe-platform-backend
+  download:
+    - name: Recipe App
+      url: https://example.com/recipeapp.apk
+  image: /assets/images/projects/banner/recipeplatform.jpeg
+  date: 2024-03-05
+  skills:
+    - react
+    - nodejs
+    - mongodb
+    - figma
+

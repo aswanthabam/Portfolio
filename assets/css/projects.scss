@@ -1,0 +1,109 @@
+---
+---
+
+.projects {
+  width: 100%;
+  min-height: calc(100vh - 200px);
+  .filters {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .display-filter {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        .selected-filters {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            span {
+                display: none;
+                padding: 5px 10px;
+                border-radius: 10px;
+                background: #8bf5be;
+                color: black;
+                align-items: center;
+                justify-content: center;
+                gap: 5px;
+                &.active {
+                    display: flex;
+                }
+            }
+        }
+      .filter {
+        list-style-type: none;
+        position: relative;
+        .filter-skills {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 10px;
+          border-radius: 10px;
+          border: 1px solid #ccc;
+          list-style-type: none;
+          overflow: visible;
+          height: 20px;
+          a {
+            text-decoration: none;
+          }
+          .dropdown-content {
+            display: none;
+            position: absolute;
+            background: #f9f9f9;
+            transform: translate(-50%, calc(50% + 20px));
+            left: 50%;
+            overflow: scroll;
+            max-height: calc(100vh - 200px);
+            a {
+              color: black;
+              padding: 12px 16px;
+              text-decoration: none;
+              display: flex;
+              text-align: left;
+              gap: 10px;
+              align-items: center;
+              &:hover {
+                background-color: #f1f1f1;
+              }
+              &.active {
+                background-color: #8bdcf5;
+              }
+            }
+          }
+          &:hover {
+            .dropdown-content {
+              display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+  .projects {
+    width: 100%;
+    display: grid;
+    grid-template-columns: calc(33.33% - 10px) calc(33.33% - 20px) calc(33.33% - 10px);
+    gap: 20px;
+    // padding: 20px;
+
+    .project {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+        border-radius: 10px;
+        background: #282828;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s;
+        &:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+        
+        img {
+            width: 100%;
+            border-radius: 10px;
+        }
+    }
+  }
+}
