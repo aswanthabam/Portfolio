@@ -10,7 +10,7 @@
   download:
     - name: Votechain APp
       url: https://google.com/
-  image: /assets/images/projects/votechain.png
+  image: /assets/images/projects/banner/votechain.jpeg
   date: 2019-12-01
   skills:
     - blockchain
