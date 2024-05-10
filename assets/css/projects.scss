@@ -7,6 +7,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  overflow-x: hidden;
   
   .filters {
     z-index: 1;
@@ -18,10 +19,14 @@
         display: flex;
         align-items: center;
         gap: 10px;
+        .selected-filters::-webkit-scrollbar {
+            display: none;
+        }
         .selected-filters {
             display: flex;
             align-items: center;
             gap: 10px;
+            overflow: auto;
 
             span {
                 display: none;
@@ -148,6 +153,23 @@
             width: 100%;
             border-radius: 10px;
         }
+    }
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .projects {
+    .projects {
+      grid-template-columns: calc(100% - 20px);
+      .project {
+        &:hover {
+          transform: none;
+          .project-button {
+            opacity: 1;
+            z-index: auto;
+          }
+        }
+      }
     }
   }
 }
