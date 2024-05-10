@@ -4,34 +4,13 @@
       "site": "aswanthvc-dev",
       "public": "_site",
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      
+      "cleanUrls": true,
+      "trailingSlash": false,
       "rewrites": [
         {
           "source": "/",
           "destination": "/index.html"
-        },
-        {
-          "source": "/projects",
-          "destination": "/projects.html"
-        },
-        {
-          "source": "/blog",
-          "destination": "/blog.html"
-        },
-        {
-          "source": "/milestones",
-          "destination": "/milestones.html"
-        },
-        {
-          "source": "/about",
-          "destination": "/about.html"
-        },
-        {
-          "source": "*",
-          "destination": "/404.html"
-        },
-        {
-          "source": "/project/:project",
-          "destination": "/project/:project.html"
         }
       ]
     },
@@ -39,30 +18,13 @@
       "site": "aswanthvc1",
       "public": "_site",
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      
+      "cleanUrls": true,
+      "trailingSlash": false,
       "rewrites": [
         {
           "source": "/",
           "destination": "/index.html"
-        },
-        {
-          "source": "/projects",
-          "destination": "/projects.html"
-        },
-        {
-          "source": "/blog",
-          "destination": "/blog.html"
-        },
-        {
-          "source": "/milestones",
-          "destination": "/milestones.html"
-        },
-        {
-          "source": "/about",
-          "destination": "/about.html"
-        },
-        {
-          "source": "*",
-          "destination": "/404.html"
         }
       ]
     },
@@ -70,30 +32,13 @@
       "site": "aswanthvc",
       "public": "_site",
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      
+      "cleanUrls": true,
+      "trailingSlash": false,
       "rewrites": [
         {
           "source": "/",
           "destination": "/index.html"
-        },
-        {
-          "source": "/projects",
-          "destination": "/projects.html"
-        },
-        {
-          "source": "/blog",
-          "destination": "/blog.html"
-        },
-        {
-          "source": "/milestones",
-          "destination": "/milestones.html"
-        },
-        {
-          "source": "/about",
-          "destination": "/about.html"
-        },
-        {
-          "source": "*",
-          "destination": "/404.html"
         }
       ]
     },
@@ -101,30 +46,13 @@
       "site": "aswanth",
       "public": "_site",
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
+      
+      "cleanUrls": true,
+      "trailingSlash": false,
       "rewrites": [
         {
           "source": "/",
           "destination": "/index.html"
-        },
-        {
-          "source": "/projects",
-          "destination": "/projects.html"
-        },
-        {
-          "source": "/blog",
-          "destination": "/blog.html"
-        },
-        {
-          "source": "/milestones",
-          "destination": "/milestones.html"
-        },
-        {
-          "source": "/about",
-          "destination": "/about.html"
-        },
-        {
-          "source": "*",
-          "destination": "/404.html"
         }
       ]
     }

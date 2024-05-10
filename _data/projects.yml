@@ -1,4 +1,5 @@
 - project: 
+  id: votechain
   name: VoteChain
   description: Votechain is a blockchain-based e-voting system, by which we can revolutionize the voting system.
   github:
@@ -27,6 +28,7 @@
     - ganache
 
 - project: 
+  id: yournextapp
   name: YourNextApp
   description: An app for managing your daily tasks and schedules efficiently.
   github:
@@ -47,6 +49,7 @@
     - android
 
 - project: 
+  id: socialapp
   name: Social Media Platform
   description: A platform for users to connect and share content with each other.
   github:
@@ -66,6 +69,7 @@
     - docker
     - git
 - project: 
+  id: chatapp
   name: Real-Time Chat Application
   description: A real-time chat application where users can communicate instantly.
   github:
@@ -84,7 +88,8 @@
     - socket.io
     - docker
 
-- project: 
+- project:
+  id: ecommerce
   name: E-Commerce Website
   description: An online platform for buying and selling products.
   github:
@@ -104,6 +109,7 @@
     - django
 
 - project: 
+  id: expensetracker
   name: Expense Tracker
   description: A web application to track expenses and manage budgets.
   github:
@@ -121,6 +127,7 @@
 
 
 - project: 
+  id: bloggingplatform
   name: Blogging Platform
   description: A platform for users to create and share blog posts.
   github:
@@ -139,6 +146,7 @@
     - mongodb
 
 - project: 
+  id: taskmanagementsystem
   name: Task Management System
   description: A system for organizing tasks, assigning them to team members, and tracking progress.
   github:
@@ -157,6 +165,7 @@
     - mongodb
 
 - project: 
+  id: recipeplatform
   name: Recipe Sharing Platform
   description: A platform for users to discover, share, and save recipes.
   github:

@@ -53,7 +53,7 @@ permalink: projects
       class="project {% for skill in project.skills %}project-skill-{{skill}} {%endfor%}"
     >
       <div class="project-button">
-        <a href="{{project.url}}" target="_blank">View Project</a>
+        <a href="/project/{{project.id}}" target="_blank">View Project</a>
       </div>
       {% if project.image %}
         <img src="{{project.image}}" alt="{{project.title}}" />
