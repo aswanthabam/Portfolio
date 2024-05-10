@@ -12,6 +12,7 @@ data.each do |entry|
         file.write("---\nlayout: project\n")
         file.write("title: #{title}\n")
         file.write("entry: #{description}\n")
+        file.write("id: #{id}\n")
         file.write("---\n")
     end
 end

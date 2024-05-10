@@ -33,7 +33,11 @@
       <link rel="stylesheet" href="{{ '/assets/css/projects.css' | relative_url }}" />
       <script src="{{ '/assets/js/projects.js' | relative_url }}"></script>
     {% endif %}
-
+    {% assign page_url = page.url | slice: 0, 9 %}
+    {% if page_url == "/project/" %}
+      <link rel="stylesheet" href="{{ '/assets/css/project.css' | relative_url }}" />
+      <script src="{{ '/assets/js/project.js' | relative_url }}"></script>
+    {% endif %}
   </head>
   <body>
     <div class="main">

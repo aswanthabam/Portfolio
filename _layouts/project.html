@@ -1,4 +1,26 @@
 ---
 layout: default
 ---
-{{page.title}}
+
+<div class="project">
+  {% for project in site.data.projects %} {% if project.id == page.id %}
+  <div class="project-header">
+    <div class="left">
+      <h1 class="project-title">{{project.name}}</h1>
+      <p class="project-description">{{project.description}}</p>
+      <div class="project-skills">
+        {% for skill in project.skills %} {% for s in site.data.skills %} {% if
+        s.id == skill %}
+        <div class="project-skill">
+          <i class="{{s.icon}}"></i>
+          <span>{{s.id}}</span>
+        </div>
+        {% endif %} {% endfor %} {% endfor %}
+      </div>
+    </div>
+    <div class="right">
+        <img src="{{project.image}}" alt="{{project.title}}" />
+    </div>
+  </div>
+  {% endif %} {% endfor %}
+</div>

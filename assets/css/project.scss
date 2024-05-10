@@ -1,0 +1,57 @@
+---
+---
+
+.project {
+  width: calc(100% - 40px);
+  min-height: calc(100vh - 180px);
+  padding: 20px;
+
+  .project-header {
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(100% - 40px);
+    background: #4b4b4ba3;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(40%, 0.5fr));
+    gap: 20px;
+    .left {
+      height: fit-content;
+      display: flex;
+      align-items: start;
+      justify-content: start;
+      gap: 20px;
+      flex-direction: column;
+      .project-skills {
+        display: flex;
+        align-items: center;
+        justify-content: start;
+        gap: 5px;
+        .project-skill {
+          padding: 10px 20px;
+          border-radius: 10px;
+          background: #fff;
+          color: black;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          gap: 5px;
+        }
+        &.active {
+          display: flex;
+        }
+      }
+    }
+    .right {
+      height: 100%;
+      max-height: 200px;
+      width: 100%;
+      img {
+        width: 100%;
+        max-height: 200px;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 10px;
+      }
+    }
+  }
+}
