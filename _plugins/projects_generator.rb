@@ -1,13 +1,8 @@
-require 'safe_yaml'
+require 'yaml'
 require 'date'
 
 # Allow the Date class to be loaded from YAML
-SafeYAML::OPTIONS[:default_mode] = :safe
-SafeYAML::OPTIONS[:deserialize_symbols] = false
-SafeYAML::OPTIONS[:whitelisted_tags] = ['!ruby/object:Date']
-
-path = '_data/projects.yml'
-data = SafeYAML.load_file(path)
+data = YAML.safe_load(File.read('_data/projects.yml'), [Date])
 
 data.each do |entry|
     title = entry['name']
