@@ -1,4 +1,5 @@
 require 'yaml'
+require 'date'
 
 data = YAML.load_file('_data/projects.yml')
 
