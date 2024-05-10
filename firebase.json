@@ -28,6 +28,10 @@
         {
           "source": "*",
           "destination": "/404.html"
+        },
+        {
+          "source": "/project/:project",
+          "destination": "/project/:project.html"
         }
       ]
     },
