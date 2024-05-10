@@ -1,7 +1,9 @@
 require 'yaml'
 require 'date'
 
-data = YAML.load_file('_data/projects.yml')
+YAML::SAFE_YAML_OPTIONS[:allowed_classes] = [Date]
+
+data = YAML.safe_load('_data/projects.yml')
 
 data.each do |entry|
     title = entry['name']
