@@ -2,7 +2,8 @@ showingSkills = [];
 window.addEventListener("DOMContentLoaded", () => {
   params = getQueryParams();
   if (params.skill) {
-    showProjectsWithSkill(params.skill);
+    console.log("filtering projects by skill: " + params.skill);
+    filterBySkill(params.skill);
   }
   console.log("projects.js loaded");
 });
