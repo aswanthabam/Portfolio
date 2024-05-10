@@ -5,6 +5,8 @@
   width: 100%;
   min-height: calc(100vh - 200px);
   .filters {
+    z-index: 1;
+    position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -83,7 +85,8 @@
   .projects {
     width: 100%;
     display: grid;
-    grid-template-columns: calc(33.33% - 10px) calc(33.33% - 20px) calc(33.33% - 10px);
+    grid-template-columns: repeat(auto-fit, minmax(20%, 0.3fr)); /* Adjust the column width as needed */
+    grid-auto-rows: max-content;
     gap: 20px;
     // padding: 20px;
 
@@ -96,8 +99,45 @@
         background: #282828;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
         transition: all 0.3s;
+        position: relative;
+        overflow: hidden;
+
+        .project-button {
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background: #1f362a86;
+          display:flex;
+          align-items: center;
+          justify-content: center;
+          opacity: 0;
+          z-index: -1;
+          transition: all 0.5s ease;
+
+          a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 10px 20px;
+            background: #8bdcf5;
+            color: #000;
+            text-decoration: none;
+            border-radius: 10px;
+          }
+        }
+
         &:hover {
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            transform: translate(10%, -10%);
+
+            .project-button {
+              opacity: 1;
+              z-index: auto;
+
+            }
         }
         
         img {
