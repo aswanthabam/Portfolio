@@ -3,6 +3,35 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>Aswanth V C - Portfolio</title>
+    <meta
+      name="description"
+      content="Tech enthusiast with a passion for crafting innovative solutions! From coding sleek mobile apps to designing captivating websites and delving into backend intricacies, I thrive on exploring the endless possibilities of technology. Each project is a thrilling puzzle to solve, where I blend creativity with technical expertise to produce remarkable results. Let's embark on a journey of innovation together!"
+    />
+    <meta property="og:url" content="https://aswanthvc.me" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Aswanth V C - Portfolio" />
+    <meta
+      property="og:description"
+      content="Skilled BCA student passionate about web and android development, dedicated to delivering high-quality results with meticulous attention to detail. Bringing innovative ideas to life, I create user-friendly and impactful solutions. Explore my portfolio for creative website design and app development."
+    />
+    <meta
+      property="og:image"
+      content="{{ 'assets/images/og-banner.png' | relative_url }}"
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta property="twitter:domain" content="aswanthvc.me" />
+    <meta property="twitter:url" content="https://aswanthvc.me" />
+    <meta name="twitter:title" content="Aswanth V C - Portfolio" />
+    <meta
+      name="twitter:description"
+      content="Skilled BCA student passionate about web and android development, dedicated to delivering high-quality results with meticulous attention to detail. Bringing innovative ideas to life, I create user-friendly and impactful solutions. Explore my portfolio for creative website design and app development."
+    />
+    <meta
+      name="twitter:image"
+      content="{{ 'assets/images/og-banner.png' | relative_url }}"
+    />
+
     <title>[{{page.title}}] Aswanth V C - Portfolio</title>
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -25,18 +54,21 @@
     <script src="{{ '/assets/js/main.js' | relative_url }}"></script>
 
     {% if page.url == "/" %}
-      <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}" />
-      <script src="{{ '/assets/js/home.js' | relative_url }}"></script>
-    {% endif %}
-
-    {% if page.url == "/projects" %}
-      <link rel="stylesheet" href="{{ '/assets/css/projects.css' | relative_url }}" />
-      <script src="{{ '/assets/js/projects.js' | relative_url }}"></script>
-    {% endif %}
-    {% assign page_url = page.url | slice: 0, 9 %}
-    {% if page_url == "/project/" %}
-      <link rel="stylesheet" href="{{ '/assets/css/project.css' | relative_url }}" />
-      <script src="{{ '/assets/js/project.js' | relative_url }}"></script>
+    <link rel="stylesheet" href="{{ '/assets/css/home.css' | relative_url }}" />
+    <script src="{{ '/assets/js/home.js' | relative_url }}"></script>
+    {% endif %} {% if page.url == "/projects" %}
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/projects.css' | relative_url }}"
+    />
+    <script src="{{ '/assets/js/projects.js' | relative_url }}"></script>
+    {% endif %} {% assign page_url = page.url | slice: 0, 9 %} {% if page_url ==
+    "/project/" %}
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/project.css' | relative_url }}"
+    />
+    <script src="{{ '/assets/js/project.js' | relative_url }}"></script>
     {% endif %}
   </head>
   <body>
