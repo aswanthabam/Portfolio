@@ -51,7 +51,7 @@
   justify-content: center;
   background-size: cover;
   background-repeat: no-repeat;
-  background: url({{"/assets/bg.svg"|relative_url}});
+  background: url({{"/assets/images/bg.svg"|relative_url}});
 }
 
 .content {
@@ -81,7 +81,7 @@
     justify-content: center;
     background-size: cover;
     background-repeat: repeat-y;
-    background: url({{"/assets/bg.svg"|relative_url}});
+    background: url({{"/assets/images/bg.svg"|relative_url}});
   }
   .topbar {
     &.desktop {

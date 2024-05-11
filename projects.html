@@ -3,4 +3,83 @@ layout: default
 title: Projects
 permalink: projects
 ---
-Projects Page
+
+<div class="projects">
+  <div class="filters">
+    <div class="display-filter">
+      <ul class="filter">
+        <li class="filter-skills">
+          <a href="javascript:void(0)" class="dropbtn"
+            ><i class="bx bx-filter"></i> Filter by skills</a
+          >
+          <div class="dropdown-content">
+            {% for skill in site.data.skills %}
+            <a
+              onclick="filterBySkill('{{skill.id}}')"
+              href="#"
+              id="filter-skill-{{skill.id}}"
+              ><i class="{{skill.icon}}"></i>{{skill.name}}</a
+            >
+            {% endfor %}
+          </div>
+        </li>
+      </ul>
+      <div class="selected-filters small-scrollbar">
+        {% for skill in site.data.skills %}
+
+        <span id="selected-filter-skill-{{skill.id}}">
+          <i class="{{skill.icon}}"></i>{{skill.name}}
+          <a
+            href="javascript:void(0)"
+            onclick="removeFilterBySkill('{{skill.id}}')"
+            ><i class="bx bx-x"></i
+          ></a>
+        </span>
+        {% endfor %}
+      </div>
+    </div>
+    <!-- <div class="sort">
+      <label for="sort">Sort</label>
+      <select id="sort">
+        <option value="newest">Newest</option>
+        <option value="oldest">Oldest</option>
+      </select>
+    </div> -->
+  </div>
+
+  <div class="projects">
+    {% for project in site.data.projects %}
+    <div
+      class="project {% for skill in project.skills %}project-skill-{{skill}} {%endfor%}"
+    >
+      <div class="project-button">
+        <a href="/project/{{project.id}}" target="_blank">View Project</a>
+      </div>
+      {% if project.image %}
+      <img src="{{project.image}}" alt="{{project.title}}" />
+      {% else %}
+      <img src="{{ 'assets/images/projects/banner/no-banner.png' | relative_url }}" alt="{{project.title}}" />
+      {% endif %}
+      <div class="project-info">
+        <h2>{{project.name}}</h2>
+        <p>{{project.description}}</p>
+        <div class="project-skills">
+          {% for skill in project.skills %}
+          <i
+            class="{% for s in site.data.skills %}{% if s.id == skill %}{{s.icon}}{% endif %}{% endfor %}"
+          ></i>
+          {% endfor %}
+        </div>
+        <!-- {% if project.github %}
+        {% for git in project.github %}
+        <a
+          href="{{git.url}}"
+          target="_blank"
+          ><i class='bx bxl-github' ></i> {{git.name}} <i class='bx bx-link-external' ></i></a>
+        {% endfor %}
+        {% endif %} -->
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>

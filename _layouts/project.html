@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<div class="project">
+  {% for project in site.data.projects %} {% if project.id == page.id %}
+  <div class="project-main">
+    <div class="project-header">
+      <div class="left">
+        <h1 class="project-title"><span class="pin">#</span> {{project.name}}</h1>
+        <p class="project-description">{{project.description}}</p>
+        <h3><span class="pin2">##</span> About the project</h3>
+        <p class="project-content">{{ project.content }}</p>
+        <div class="project-skills">
+          {% for skill in project.skills %} {% for s in site.data.skills %} {%
+          if s.id == skill %}
+          <div class="project-skill">
+            <i class="{{s.icon}}"></i>
+            <span>{{s.id}}</span>
+          </div>
+          {% endif %} {% endfor %} {% endfor %}
+        </div>
+        <h3><span class="pin2">##</span> Gallery</h3>
+        <div class="gallery">
+          {% if project.gallery %} {% for image in project.gallery %}
+          <img src="{{image}}" alt="{{project.title}}" />
+          {% endfor %} {% elsif project.image %}
+          <img src="{{project.image}}" alt="{{project.title}}" />
+          {% endif %}
+        </div>
+      </div>
+    </div>
+    <div class="project-links">
+      <h2>Links</h2>
+      <p>Check out the links below to learn more about this project.</p>
+      {% for link in project.links %}
+      <a href="{{link.url}}" target="_blank" class="project-link">
+        <i class="{{link.icon}}"></i>
+        <span>{{link.name}}</span>
+        <i class="bx bx-link-external"></i>
+      </a>
+      {% endfor %}
+    </div>
+  </div>
+  {% endif %} {% endfor %}
+</div>

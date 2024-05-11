@@ -18,9 +18,8 @@ a {
 }
 
 ::-webkit-scrollbar {
-  width: 10px;
+  width: 5px;
 }
-
 /* Track */
 ::-webkit-scrollbar-track {
   background: #00000000;
@@ -38,4 +37,10 @@ a {
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
   background: $primary;
+}
+
+@media screen and (max-width: 768px){
+  ::-webkit-scrollbar {
+    width: 1px;
+  }
 }
