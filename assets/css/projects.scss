@@ -7,7 +7,6 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  overflow-x: hidden;
   
   .filters {
     z-index: 1;
@@ -111,6 +110,29 @@
         position: relative;
         overflow: hidden;
 
+        .project-info {
+          display: flex;
+          flex-direction: column;
+          gap: 10px;
+          h2 {
+            font-size: 25px;
+          }
+          .project-skills {
+            width: 100%;
+            display: flex;
+            justify-content: end;
+            gap: 2px;
+            i {
+              font-size: 20px;
+              color: #ffffff70;
+
+              &:hover {
+                color: #8bdcf5;
+              }
+            }
+          }
+        }
+
         .project-button {
           width: 100%;
           height: 100%;
@@ -140,8 +162,6 @@
 
         &:hover {
             box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-            transform: translate(10%, -10%);
-
             .project-button {
               opacity: 1;
               z-index: auto;

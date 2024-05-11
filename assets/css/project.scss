@@ -1,56 +1,158 @@
 ---
 ---
-
+@import "typography";
 .project {
   width: calc(100% - 40px);
   min-height: calc(100vh - 180px);
   padding: 20px;
-
-  .project-header {
-    padding: 20px;
-    border-radius: 10px;
-    width: calc(100% - 40px);
-    background: #4b4b4ba3;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(40%, 0.5fr));
+  .project-main {
+    display: flex;
     gap: 20px;
-    .left {
-      height: fit-content;
+
+    .project-links {
+      padding: 20px;
+      width: calc(50% - 40px);
+      height: 1;
+      max-height: calc(100vh - 220px);
+      overflow-y: auto;
+      background: #11111130;
       display: flex;
-      align-items: start;
-      justify-content: start;
       gap: 20px;
+      border-radius: 10px;
       flex-direction: column;
-      .project-skills {
+
+      a {
         display: flex;
+        gap: 10px;
+        text-decoration: none;
+        font-size: 20px;
         align-items: center;
+        background: #333;
+        padding: 10px 20px;
+        border-radius: 10px;
+      }
+    }
+    .project-header {
+      padding: 20px;
+      border-radius: 10px;
+      width: calc(100% - 40px);
+      background: #4b4b4ba3;
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      // justify-content: start;
+      max-height: calc(100vh - 220px);
+      overflow: auto;
+      gap: 20px;
+      .pin {
+        color: $primary;
+      }.pin2 {
+        color: #ffffff50;
+      }
+      .left {
+        height: fit-content;
+        display: flex;
+        align-items: start;
         justify-content: start;
-        gap: 5px;
-        .project-skill {
-          padding: 10px 20px;
-          border-radius: 10px;
-          background: #fff;
-          color: black;
+        gap: 20px;
+        flex-direction: column;
+
+        p {
+          font-size: 1.2rem;
+          line-height: 1.5;
+        }
+        .project-description {
+          display: block;
+          width: 100%;
+          border-left: 5px solid #ffffff50;
+          padding-left: 10px;
+          background: #ffffff10;
+        }
+        .project-content {
+          font-size: 1rem;
+          padding: 10px;
+        }
+        .project-skills {
+          max-width: 100%;
+          overflow: auto;
+          scrollbar-width: none;
           display: flex;
           align-items: center;
-          justify-content: center;
+          justify-content: start;
           gap: 5px;
+          .project-skill {
+            padding: 10px 20px;
+            border-radius: 10px;
+            background: #fff;
+            color: black;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+          }
+          &.active {
+            display: flex;
+          }
         }
-        &.active {
-          display: flex;
+        .gallery {
+          height: auto;
+          display: grid;
+          place-items: center;
+          grid-template-columns: calc(50% - 20px) calc(50% - 20px);
+          gap: 20px;
+          img {
+            width: 100%;
+            border-radius: 10px;
+            // transition: all 1s ease;
+            &:hover {
+              // position: fixed;
+              // top: 50%;
+              // left: 50%;
+
+              // transform: translateX(-50%) translateY(-50%);
+              // max-width: 80vw;
+              // width: 80vw;
+              // object-fit: contain;
+              // max-height: 80vh;
+              // box-shadow: 1px 1px 10px #ffffff20;
+              padding: 10px;
+              background: #22222290;
+              border-radius: 10px;
+              transform: scale(1.01);
+            }
+          }
         }
       }
     }
-    .right {
-      height: 100%;
-      max-height: 200px;
-      width: 100%;
-      img {
-        width: 100%;
-        max-height: 200px;
-        height: 100%;
-        object-fit: cover;
-        border-radius: 10px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .project {
+    .project-main {
+      flex-direction: column;
+      .project-links {
+        width: calc(100% - 40px);
+        max-height: none;
+      }
+      .project-header {
+        width: calc(100% - 40px);
+        max-height: none;
+        .left {
+          flex-direction: column;
+          gap: 10px;
+          .project-skills {
+            flex-wrap: wrap;
+            gap: 10px;
+            .project-skill {
+              padding: 5px 10px;
+              font-size: 0.8rem;
+            }
+          }
+        }
+        .right {
+          max-height: 300px;
+        }
       }
     }
   }
