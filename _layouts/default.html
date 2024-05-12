@@ -69,6 +69,9 @@
       href="{{ '/assets/css/project.css' | relative_url }}"
     />
     <script src="{{ '/assets/js/project.js' | relative_url }}"></script>
+    {% endif %} {% if page.url == "/blog" %}
+    <link rel="stylesheet" href="{{ '/assets/css/blog.css' | relative_url }}" />
+    <script src="{{ '/assets/js/blog.js' | relative_url }}"></script>
     {% endif %}
   </head>
   <body>
