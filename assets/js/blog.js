@@ -8,29 +8,42 @@ window.addEventListener("DOMContentLoaded", function () {
     redirect: "follow",
   };
 
-//   fetch(
-//     "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@aswanth-vc",
-//     requestOptions
-//   )
-//     .then((response) => response.text())
-//     .then((result) => {
-//       var data = JSON.parse(result);
+  fetch(
+    "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@aswanth-vc",
+    requestOptions
+  )
+    .then((response) => response.text())
+    .then((result) => {
+      var data = JSON.parse(result);
 
-//       data.items.map((blog) => {
-//         console.log(blog);
-//         var blogPost = document.createElement("div");
-//         blogPost.innerHTML = `
-//                     <div class="blog-post">
-//                         <div class="blog-image">
-//                         </div>
-//                         <div class="blog-content">
-//                             <h3>${blog.title}</h3>
-//                             <p>${blog.description}</p>
-//                             <a target="_blank" href="${blog.link}" class="btn">Read More</a>
-//                         </div>
-//                     </div>`;
-//         blogs.appendChild(blogPost);
-//       });
-//     })
-    // .catch((error) => console.log("error", error));
+      data.items.map((blog) => {
+        console.log(blog);
+        var blogPost = document.createElement("div");
+        blogPost.innerHTML = `
+        <div class="post">
+            <div class="post-meta">
+                <i class="bx bxl-medium"></i>
+                <div class="post-date">
+                    <i class="bx bx-calendar"></i>
+                    <span>${new Date(blog.pubDate).getDay()}</span>
+                    <span>${new Date(blog.pubDate).toLocaleString('default', {month: 'short'})}</span>
+                    <span>${new Date(blog.pubDate).getFullYear()}</span>
+                </div>
+            </div>
+            <div class="post-content">
+                <h2 class="post-title">${blog.title}</h2>
+                <p class="post-description">
+                    ${blog.description.slice(0, 600).replace(/<[^>]*>?/gm, "")} ...
+                </p>
+                <a href="${blog.link}" class="btn post-btn"
+                    ><i class="bx bxl-medium"></i> Read More
+                    <i class="bx bx-link-external"></i
+                ></a>
+            </div>
+        </div>
+        `;
+        blogs.appendChild(blogPost);
+      });
+    })
+    .catch((error) => console.log("error", error));
 });
