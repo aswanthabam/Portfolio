@@ -3,7 +3,7 @@ layout: default
 title: Home
 ---
 
-<div class="home">
+<main class="home">
   <div class="page1">
     <div class="head">
       <div class="left">
@@ -36,7 +36,7 @@ title: Home
       </div>
       <div class="socials">
         {% for item in site.data.socials %}
-        <a href="{{item.url}}" target="_blank"><i class="{{item.icon}}"></i></a>
+        <a href="{{item.url}}" target="_blank" aria-label="View {{item.name}} profile of Aswanth V C"><i class="{{item.icon}}"></i></a>
         {% endfor %}
       </div>
       <div class="right">
@@ -46,15 +46,22 @@ title: Home
             <span class="msg">{{ item.status }}</span>
             {% endfor %}
           </div>
-          <img src="{{ 'assets/images/chat-status.svg' | relative_url }}" />
+          <img
+            alt="Current Status"
+            src="{{ 'assets/images/chat-status.svg' | relative_url }}"
+          />
         </div>
         <div class="my-photo">
           <img
             id="bg-illustration"
             class="bg-illustration"
+            alt="Background Illustration"
             src="{{ 'assets/images/profile-bg.svg' | relative_url }}"
           />
-          <img src="{{ 'assets/images/aswanthvc.png' | relative_url }}" />
+          <img
+            alt="Aswanth V C"
+            src="{{ 'assets/images/aswanthvc.png' | relative_url }}"
+          />
         </div>
       </div>
     </div>
@@ -70,4 +77,4 @@ title: Home
     </div>
   </div>
   <!-- <div id="status" class="status"></div> -->
-</div>
+</main>
