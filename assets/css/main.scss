@@ -3,6 +3,26 @@
 
 @import "typography";
 
+.section-title {
+  margin-bottom: 40px;
+  width: auto;
+  position: relative;
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    transform: translateY(9px);
+    display: block;
+    filter: blur(5px);
+    width: 100px;
+    height: 5px;
+    background: $primary;
+    margin-bottom: 10px;
+  
+  }
+}
+
 .topbar {
   display: flex;
   align-items: center;

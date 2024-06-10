@@ -3,4 +3,38 @@ layout: default
 title: Milestones
 permalink: milestones
 ---
-Milestones Page
+
+<div class="milestones">
+  <div class="explain">
+    <h1 class="section-title">Milestones</h1>
+    <p>
+      {{ site.data.content.milestone }}
+    </p>
+  </div>
+  <div class="wrapper">
+    <div class="container">
+      {% for milestone in site.data.milestones %}
+      <div class="milestone">
+        <div class="date">{{ milestone.date }}</div>
+        <div class="content">
+          <div class="title">{{ milestone.title }}</div>
+          <div class="description">{{ milestone.description }}</div>
+        </div>
+      </div>
+      {% assign ind = forloop.index | modulo: 4 %} {% if forloop.last %} {%
+      assign ind = 10 %} {% endif %} {% if ind == 2 %}
+      <div class="placeholder"></div>
+      <div class="placeholder"></div>
+      <img src="assets/images/arrow-vertical.svg" class="arrow arrow-down" />
+      {% elsif ind == 0 %}
+      <img src="assets/images/arrow-vertical.svg" class="arrow arrow-down" />
+      <div class="placeholder"></div>
+      <div class="placeholder"></div>
+      {% elsif ind == 1 %}
+      <img src="assets/images/arrow-horizontal.svg" class="arrow arrow-right" />
+      {% elsif ind == 3 %}
+      <img src="assets/images/arrow-horizontal.svg" class="arrow arrow-left" />
+      {% endif %} {% endfor %}
+    </div>
+  </div>
+</div>

@@ -15,9 +15,8 @@ window.addEventListener("DOMContentLoaded", function () {
     .then((response) => response.text())
     .then((result) => {
       var data = JSON.parse(result);
-
+      console.log(data);
       data.items.map((blog) => {
-        console.log(blog);
         var blogPost = document.createElement("div");
         blogPost.innerHTML = `
         <div class="post">
@@ -29,6 +28,7 @@ window.addEventListener("DOMContentLoaded", function () {
                     <span>${new Date(blog.pubDate).toLocaleString('default', {month: 'short'})}</span>
                     <span>${new Date(blog.pubDate).getFullYear()}</span>
                 </div>
+                <img src="${blog['thumbnail']}"/>
             </div>
             <div class="post-content">
                 <h2 class="post-title">${blog.title}</h2>
