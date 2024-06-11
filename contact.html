@@ -11,6 +11,15 @@ permalink: contact
       <p>{{ site.data.content.milestone }}</p>
     </div>
     <div class="overlay"></div>
+    <div class="popup">
+      <div class="popup-content">
+        <h2 class="title" id="popup-title">Hmmm! an issue occured!</h2>
+        <p class="message" id="popup-message">
+          There was an issue with the code, the button you pressed didnt work as expected. Just try again, if the issue persists, please contact me through my social media handles.
+        </p>
+        <button class="close" onclick="closePopup()">X</button>
+      </div>
+    </div>
     <div class="wrapper">
       <div class="container">
         <input
@@ -19,6 +28,13 @@ permalink: contact
           name="name"
           id="contact-name"
           placeholder="What's Your Name?"
+        />
+        <input
+          class="input"
+          type="text"
+          name="Email"
+          id="contact-email"
+          placeholder="Enter Your Email ID"
         />
         <textarea
           class="input message"
@@ -88,9 +104,11 @@ permalink: contact
           type="text"
           name="Email"
           id="contact-option"
+          style="display: none;"
           placeholder="Enter Your Email ID"
         />
-        <button class="submit">Send Message</button>
+        <input type="hidden" id="contact-preference" value="email" />
+        <button id="contact-submit" class="submit" onclick="submit()"><div class='loader loader-small'></div>Send Message</button>
       </div>
     </div>
   </div>
