@@ -117,10 +117,14 @@
         .milestone {
           width: calc(100% - 40px);
           margin-bottom: 20px;
+          grid-row: auto !important;
+          grid-column: 1 !important;
         }
-
-        .arrow {
+        .placeholder {
           display: none;
+        }
+        .arrow {
+          display: none !important;
         }
       }
     }
