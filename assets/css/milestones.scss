@@ -59,13 +59,13 @@
         &:hover {
           background-color: #ffffff30;
           box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-          .content {
-            .description {
-              overflow: auto;
-              text-overflow: initial;
-              -webkit-line-clamp: none;
-            }
-          }
+          // .content {
+          //   .description {
+          //     overflow: auto;
+          //     text-overflow: initial;
+          //     -webkit-line-clamp: none;
+          //   }
+          // }
         }
         .content {
           padding: 0;
