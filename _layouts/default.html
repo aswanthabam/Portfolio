@@ -79,6 +79,12 @@
       href="{{ '/assets/css/milestones.css' | relative_url }}"
     />
     <script src="{{ '/assets/js/milestones.js' | relative_url }}"></script>
+    {% endif %} {% if page.url == "/contact" %}
+    <link
+      rel="stylesheet"
+      href="{{ '/assets/css/contact.css' | relative_url }}"
+    />
+    <script src="{{ '/assets/js/contact.js' | relative_url }}"></script>
     {% endif %}
   </head>
   <body>
