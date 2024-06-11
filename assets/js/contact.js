@@ -113,7 +113,7 @@ async function sendMessage(name, message, contact_option, contact, email) {
   const url = "https://mlokzychglfzjobnkkwo.supabase.co/functions/v1/resend";
   const options = {
     method: "POST",
-    headers: { "content-type": "application/json", 'Access-Control-Allow-Origin': window.location.origin, 'Access-Control-Allow-Credentials': true},
+    headers: { "content-type": "application/json"},
     body: `{"name":"${name}","message":"${message}","contact_option":"${contact_option}","contact":"${contact}","email":"${email}"}`,
   };
 
