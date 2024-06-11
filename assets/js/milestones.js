@@ -77,3 +77,18 @@ function observerIntersection(element) {
     rect.right <= (window.innerWidth || document.documentElement.clientWidth);
   return jk;
 }
+
+function showMilestone(element) {
+  var overlay = document.querySelector(".overlay");
+  if (element.classList.contains("show")) {
+    element.classList.remove("show");
+    overlay.classList.remove("show");
+    return;
+  }
+  element.classList.add("show");
+  overlay.classList.add("show");
+  overlay.onclick = () => {
+    element.classList.remove("show");
+    overlay.classList.remove("show");
+  };
+}
