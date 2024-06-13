@@ -142,7 +142,7 @@ async function sendMessage(name, message, contact_option, contact, email, occupa
   const options = {
     method: "POST",
     headers: {
-      Authorization: 'Bearer {{contact_access_token}}',
+      Authorization: 'Bearer {{site.contact_access_token}}',
       'content-type': 'application/json'
     },
     body: `{"name":"${name}","message":"${message}","contact_option":"${contact_option}","contact":"${contact}","email":"${email}", "occupation":"${occupation}"}`,
