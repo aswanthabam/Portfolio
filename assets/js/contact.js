@@ -1,3 +1,5 @@
+---
+---
 var placeholders = {
   email: "Enter Your Email ID",
   phone: "Enter Your Phone Number",
@@ -140,7 +142,7 @@ async function sendMessage(name, message, contact_option, contact, email, occupa
   const options = {
     method: "POST",
     headers: {
-      Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1sb2t6eWNoZ2xmempvYm5ra3dvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTgxMzUwODEsImV4cCI6MjAzMzcxMTA4MX0.Pf4-XTA52RAQLT5gBl3ThAs3gyESlhEL_FXn0dqny1Y',
+      Authorization: 'Bearer {{contact_access_token}}',
       'content-type': 'application/json'
     },
     body: `{"name":"${name}","message":"${message}","contact_option":"${contact_option}","contact":"${contact}","email":"${email}", "occupation":"${occupation}"}`,
