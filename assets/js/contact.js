@@ -9,6 +9,10 @@ var types = {
   whatsapp: "tel",
 };
 
+function updateMessageLength(element) {
+  document.querySelector("#message-length").innerText = element.value.length + "/1200";
+}
+
 function onButtonTap(element, name) {
   var inp = document.querySelector("#contact-option");
   inp.placeholder = placeholders[name];
@@ -16,7 +20,7 @@ function onButtonTap(element, name) {
   inp.name = name;
   if (name != "email") {
     document.querySelector("#contact-option").style.display = "block";
-  }else {
+  } else {
     document.querySelector("#contact-option").style.display = "none";
   }
   document.querySelector("#contact-preference").value = name;
@@ -33,6 +37,9 @@ function submit() {
   var contact_option = document.querySelector("#contact-preference").value;
   var contact = document.querySelector("#contact-option").value;
   var email = document.querySelector("#contact-email").value;
+  var occupation = document.querySelector("#contact-occupation").value;
+  var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  var phoneRegex = /^\+?[0-9]\d{1,14}$/;
   if (contact_option == "email") {
     contact = email;
   }
@@ -42,9 +49,7 @@ function submit() {
     !contact_option ||
     !contact ||
     !email ||
-    name.length < 3 ||
-    message.length < 3 ||
-    contact.length < 3 ||
+    !occupation ||
     email.length < 3 ||
     (contact_option != "email" &&
       contact_option != "phone" &&
@@ -52,12 +57,47 @@ function submit() {
   ) {
     showPopup(
       "PLEASE FILL FORM CORRECTLY!",
-      "All fields in the contact form are mandatory, and cannot be left empty."
+      "Please fill all the fields correctly to send the message. All fields must be filled and need to be valid. "
+    );
+    return;
+  }
+  if (message.trim().split(/\s+/).length < 10) {
+    showPopup(
+      "MESSAGE TOO SHORT!",
+      "Please explain your message in detail. Minimum 10 words are required to send the message."
+    );
+    return;
+  }
+  if (name.length < 3) {
+    showPopup(
+      "INVALID NAME!",
+      "Please enter a valid name to send the message."
+    );
+    return;
+  }
+
+  if (occupation.length < 3) {
+    showPopup(
+      "INVALID OCCUPATION!",
+      "Please enter a valid occupation to send the message."
+    );
+    return;
+  }
+
+  if (contact_option != "email" && phoneRegex.test(contact) == false) {
+    showPopup("INVALID CONTACT!", "Please enter a valid contact number.");
+    return;
+  }
+
+  if (!emailRegex.test(email)) {
+    showPopup(
+      "INVALID EMAIL!",
+      "Please enter a valid email address to send the message."
     );
     return;
   }
   showLoader();
-  sendMessage(name, message, contact_option, contact, email).then((res) => {
+  sendMessage(name, message, contact_option, contact, email, occupation).then((res) => {
     hideLoader();
     console.log(res);
     if (res) {
@@ -95,26 +135,15 @@ function showPopup(title, message) {
   document.querySelector("#popup-message").innerText = message;
 }
 
-async function sendMessage(name, message, contact_option, contact, email) {
-  if (
-    !name ||
-    !message ||
-    !contact_option ||
-    !contact ||
-    name.length < 3 ||
-    message.length < 3 ||
-    contact.length < 3 ||
-    (contact_option != "email" &&
-      contact_option != "phone" &&
-      contact_option != "whatsapp")
-  ) {
-    return false;
-  }
-  const url = "https://mlokzychglfzjobnkkwo.supabase.co/functions/v1/resend";
+async function sendMessage(name, message, contact_option, contact, email, occupation) {
+  const url = "https://mlokzychglfzjobnkkwo.supabase.co/functions/v1/contact";
   const options = {
     method: "POST",
-    headers: { "content-type": "application/json"},
-    body: `{"name":"${name}","message":"${message}","contact_option":"${contact_option}","contact":"${contact}","email":"${email}"}`,
+    headers: {
+      Authorization: 'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im1sb2t6eWNoZ2xmempvYm5ra3dvIiwicm9sZSI6ImFub24iLCJpYXQiOjE3MTgxMzUwODEsImV4cCI6MjAzMzcxMTA4MX0.Pf4-XTA52RAQLT5gBl3ThAs3gyESlhEL_FXn0dqny1Y',
+      'content-type': 'application/json'
+    },
+    body: `{"name":"${name}","message":"${message}","contact_option":"${contact_option}","contact":"${contact}","email":"${email}", "occupation":"${occupation}"}`,
   };
 
   try {
@@ -124,6 +153,6 @@ async function sendMessage(name, message, contact_option, contact, email) {
     }
     return true;
   } catch (error) {
-    return true;
+    return false;
   }
 }

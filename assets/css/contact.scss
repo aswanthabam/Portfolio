@@ -6,7 +6,7 @@
   width: calc(100% - 40px);
   display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: start;
   min-height: calc(100vh - 150px);
   .overlay {
     z-index: 50;
@@ -49,7 +49,7 @@
       cursor: pointer;
     }
     .message {
-        text-align: center;
+      text-align: center;
     }
     .title {
       font-size: 30px;
@@ -64,11 +64,10 @@
     width: calc(100% - 40px);
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: center;
+    flex-direction: column;
     .explain {
       max-width: 300px;
-      margin-right: 50px;
-      margin-bottom: 20px;
       p {
         font-size: 16px;
         color: #fffffff0;
@@ -78,9 +77,70 @@
 
     .wrapper {
       width: 100%;
-      max-width: 600px;
+      max-width: 900px;
+      // height: 370px;
       .container {
         width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        height: 100%;
+        .right {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          .message-wrapper {
+            position: relative;
+            height: max(150px, calc(100% - 100px));
+            .message-info {
+              position: absolute;
+              bottom: -25px;
+              right: 5px;
+
+              p {
+                color: #68e6ffc0;
+              }
+            }
+            .input {
+              &.message {
+                padding: 15px;
+                height: max(150px, 100%);
+              }
+            }
+          }
+          .submit {
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            margin: 0;
+            outline: none;
+            background: #0fc5d1;
+            color: #fff;
+            border: none;
+            padding: 15px 20px;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+
+            &.loading {
+              pointer-events: none;
+              background: #a1a1a1f0;
+              .loader {
+                display: block;
+              }
+            }
+            .loader {
+              display: none;
+            }
+          }
+        }
+        .left {
+          height: 100%;
+        }
         .input {
           width: calc(100% - 30px);
           display: flex;
@@ -94,10 +154,6 @@
           color: #ffffffff;
           &::placeholder {
             color: #ffffffc0;
-          }
-
-          &.message {
-            height: 150px;
           }
         }
 
@@ -139,34 +195,6 @@
             }
           }
         }
-
-        .submit {
-          width: 100%;
-          margin: 0;
-          outline: none;
-          background: #0fc5d1;
-          color: #fff;
-          border: none;
-          padding: 15px 20px;
-          border-radius: 10px;
-          cursor: pointer;
-          font-size: 20px;
-          display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 20px;
-
-            &.loading {
-                pointer-events: none;
-                background: #a1a1a1f0;
-                .loader {
-                    display: block;
-                }
-            }
-            .loader {
-                display: none;
-            }
-        }
       }
     }
   }
@@ -184,6 +212,15 @@
       }
       .wrapper {
         .container {
+          grid-template-columns: 1fr;
+          gap: 0px;
+          .right {
+            .submit {
+              margin-top: 50px;
+              position: relative;
+            }
+            margin-bottom: 120px;
+          }
           .options {
             flex-wrap: wrap;
             .option-button {
