@@ -139,13 +139,22 @@ function showPopup(title, message) {
 
 async function sendMessage(name, message, contact_option, contact, email, occupation) {
   const url = "https://mlokzychglfzjobnkkwo.supabase.co/functions/v1/contact";
+  var body = {
+    name: name,
+    message: message,
+    contact_option: contact_option,
+    contact: contact,
+    email: email,
+    occupation: occupation,
+  };
+
   const options = {
     method: "POST",
     headers: {
       Authorization: 'Bearer {{site.contact_access_token}}',
-      'content-type': 'application/json'
+      'Content-Type': 'application/json'
     },
-    body: `{"name":"${name}","message":"${message}","contact_option":"${contact_option}","contact":"${contact}","email":"${email}", "occupation":"${occupation}"}`,
+    body: JSON.stringify(body),
   };
 
   try {
