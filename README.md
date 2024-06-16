@@ -6,4 +6,4 @@ Checkout the my portfolio website : https://aswanthvc.me or https://aswanthvc.we
 
 Dev server hosted on : https://aswanthvc-dev.web.app
 
-> NB : Its a personal portfolio, so contributions will not be accepted. So dont create any PR's
+> NB : Its a personal portfolio, so contributions will not be accepted.
