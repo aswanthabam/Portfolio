@@ -23,7 +23,7 @@
     - /assets/images/projects/banner/votechain.png
     - /assets/images/projects/gallery/votechain/1.png
     - /assets/images/projects/gallery/votechain/2.png
-  date: 2019-12-01
+  date: Oct 2023 - Apr 2024
   skills:
     - blockchain
     - flutter
@@ -59,7 +59,7 @@
     - https://drop-it.web.app/banner.png
     - /assets/images/projects/gallery/dropit/1.png
     - /assets/images/projects/gallery/dropit/2.png
-  date: 2019-12-01
+  date: Jun 2024
   skills:
     - fastapi
     - mongodb
@@ -67,3 +67,29 @@
     - nextjs
     - nodejs
     - python
+
+- project:
+  id: robocar
+  name: RoboCar
+  description: Robo Car Project using Arduino. Builded a car that can be controlled using a mobile app via Bluetooth / Voice commands, and can automatically drive by detecting obstacles using Ultrasonic sensors.
+  content_file: robocar.md
+  links:
+    - name: RoboCar Repository
+      icon: bx bxl-github
+      url: https://github.com/aswanthabam/RoboCar
+    - name: RoboCar App Repository
+      icon: bx bxl-github
+      url: https://github.com/aswanthabam/RoboCarAPP
+
+  image: /assets/images/projects/banner/robocar.png
+  gallery:
+    - /assets/images/projects/banner/robocar.png
+    - https://raw.githubusercontent.com/aswanthabam/RoboCarAPP/main/images/screenshot.jpg
+  date: Jun 2024
+  skills:
+    - arduino
+    - c
+    - iot
+    - android
+    - figma
+    - java

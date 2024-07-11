@@ -50,3 +50,10 @@
 
 - id: supabase
   name: Supabase
+
+- id: iot
+  name: IoT
+  icon: bx bx-cube-alt
+
+- id: arduino
+  name: Arduino
