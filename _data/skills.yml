@@ -22,6 +22,9 @@
   name: Flutter
   icon: bx bxl-flutter
 
+- id: nextjs
+  name: Next.js
+
 - id: figma
   name: Figma
   icon: bx bxl-figma
@@ -38,3 +41,12 @@
   name: Web3
   icon: bx bx-cube-alt
 
+- id: solidity
+  name: Solidity
+  icon: bx bx-cube-alt
+
+- id: fastapi
+  name: FastAPI
+
+- id: supabase
+  name: Supabase

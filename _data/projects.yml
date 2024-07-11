@@ -1,4 +1,4 @@
-- project: 
+- project:
   id: votechain
   name: VoteChain
   description: Votechain is a blockchain-based e-voting system, by which we can revolutionize the voting system.
@@ -37,12 +37,42 @@
     - truffle
     - ganache
 
-- project: 
+- project:
+  id: dropit
+  name: DropIT
+  description: DropIT is a fast and simple file-sharing platform. Share files without an account using a memorable code, ensuring easy and quick transfers across the internet.
+  content: >
+    DropIT is a file sharing platform that makes file sharing across the internet simple and fast. With DropIT, you don't need an account to share a file of any type, and you can share it with anyone using a simple, memorable code similar to an OTP.
+  links:
+    - name: DropIT
+      icon: bx bxl-website
+      url: https://drop-it.web.app
+    - name: DropIT Repository
+      icon: bx bxl-github
+      url: https://github.com/aswanthabam/dropit
+    - name: DropIT Backend Repository
+      icon: bx bxl-github
+      url: https://github.com/aswanthabam/dropit-backend
+  image: https://drop-it.web.app/banner.png
+  gallery:
+    - /assets/images/projects/banner/votechain.png
+    - /assets/images/projects/gallery/votechain/1.png
+    - /assets/images/projects/gallery/votechain/2.png
+  date: 2019-12-01
+  skills:
+    - fastapi
+    - mongodb
+    - supabase
+    - nextjs
+    - nodejs
+    - python
+
+- project:
   id: yournextapp
   name: YourNextApp
   description: An app for managing your daily tasks and schedules efficiently.
   github:
-    - name: YourNextApp-frontend 
+    - name: YourNextApp-frontend
       url: https://github.com/yourusername/YourNextApp-frontend
     - name: YourNextApp-backend
       url: https://github.com/yourusername/YourNextApp-backend
@@ -57,12 +87,12 @@
     - docker
     - android
 
-- project: 
+- project:
   id: socialapp
   name: Social Media Platform
   description: A platform for users to connect and share content with each other.
   github:
-    - name: social-media-frontend 
+    - name: social-media-frontend
       url: https://github.com/yourusername/social-media-frontend
     - name: social-media-backend
       url: https://github.com/yourusername/social-media-backend
@@ -76,12 +106,12 @@
     - mongodb
     - docker
     - git
-- project: 
+- project:
   id: chatapp
   name: Real-Time Chat Application
   description: A real-time chat application where users can communicate instantly.
   github:
-    - name: real-time-chat-frontend 
+    - name: real-time-chat-frontend
       url: https://github.com/yourusername/real-time-chat-frontend
     - name: real-time-chat-backend
       url: https://github.com/yourusername/real-time-chat-backend
@@ -100,7 +130,7 @@
   name: E-Commerce Website
   description: An online platform for buying and selling products.
   github:
-    - name: ecommerce-frontend 
+    - name: ecommerce-frontend
       url: https://github.com/yourusername/ecommerce-frontend
     - name: ecommerce-backend
       url: https://github.com/yourusername/ecommerce-backend
@@ -114,12 +144,12 @@
     - mongodb
     - django
 
-- project: 
+- project:
   id: expensetracker
   name: Expense Tracker
   description: A web application to track expenses and manage budgets.
   github:
-    - name: expense-tracker 
+    - name: expense-tracker
       url: https://github.com/yourusername/expense-tracker
   download:
     - name: Expense Tracker App
@@ -130,13 +160,12 @@
     - nodejs
     - mongodb
 
-
-- project: 
+- project:
   id: bloggingplatform
   name: Blogging Platform
   description: A platform for users to create and share blog posts.
   github:
-    - name: blogging-platform-frontend 
+    - name: blogging-platform-frontend
       url: https://github.com/yourusername/blogging-platform-frontend
     - name: blogging-platform-backend
       url: https://github.com/yourusername/blogging-platform-backend
@@ -149,12 +178,12 @@
     - nodejs
     - mongodb
 
-- project: 
+- project:
   id: taskmanagementsystem
   name: Task Management System
   description: A system for organizing tasks, assigning them to team members, and tracking progress.
   github:
-    - name: task-management-frontend 
+    - name: task-management-frontend
       url: https://github.com/yourusername/task-management-frontend
     - name: task-management-backend
       url: https://github.com/yourusername/task-management-backend
@@ -167,12 +196,12 @@
     - nodejs
     - mongodb
 
-- project: 
+- project:
   id: recipeplatform
   name: Recipe Sharing Platform
   description: A platform for users to discover, share, and save recipes.
   github:
-    - name: recipe-platform-frontend 
+    - name: recipe-platform-frontend
       url: https://github.com/yourusername/recipe-platform-frontend
     - name: recipe-platform-backend
       url: https://github.com/yourusername/recipe-platform-backend
@@ -185,4 +214,3 @@
     - nodejs
     - mongodb
     - figma
-

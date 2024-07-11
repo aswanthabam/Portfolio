@@ -1,5 +1,6 @@
 ---
 ---
+
 @import "typography";
 .project {
   width: calc(100% - 40px);
@@ -46,7 +47,8 @@
       gap: 20px;
       .pin {
         color: $primary;
-      }.pin2 {
+      }
+      .pin2 {
         color: #ffffff50;
       }
       .left {
@@ -89,6 +91,16 @@
             align-items: center;
             justify-content: center;
             gap: 5px;
+            .svgIcon {
+              max-width: 15px;
+              max-height: 15px;
+              height: 15px;
+              object-fit: contain;
+              fill: #000;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
           }
           &.active {
             display: flex;

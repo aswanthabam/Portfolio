@@ -7,16 +7,18 @@ layout: default
   <div class="project-main">
     <div class="project-header">
       <div class="left">
-        <h1 class="project-title"><span class="pin">#</span> {{project.name}}</h1>
+        <h1 class="project-title">
+          <span class="pin">#</span> {{project.name}}
+        </h1>
         <p class="project-description">{{project.description}}</p>
         <h3><span class="pin2">##</span> About the project</h3>
         <p class="project-content">{{ project.content }}</p>
         <div class="project-skills">
-          {% for skill in project.skills %} {% for s in site.data.skills %} {%
-          if s.id == skill %}
+          {% for project_skill in project.skills %} {% for skill in
+          site.data.skills %} {% if skill.id == project_skill %}
           <div class="project-skill">
-            <i class="{{s.icon}}"></i>
-            <span>{{s.id}}</span>
+            {% include skill_icon.html %}
+            <span>{{skill.id}}</span>
           </div>
           {% endif %} {% endfor %} {% endfor %}
         </div>
