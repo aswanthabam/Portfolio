@@ -41,11 +41,10 @@
   id: dropit
   name: DropIT
   description: DropIT is a fast and simple file-sharing platform. Share files without an account using a memorable code, ensuring easy and quick transfers across the internet.
-  content: >
-    DropIT is a file sharing platform that makes file sharing across the internet simple and fast. With DropIT, you don't need an account to share a file of any type, and you can share it with anyone using a simple, memorable code similar to an OTP.
+  content_file: dropit.md
   links:
     - name: DropIT
-      icon: bx bxl-website
+      icon: bi bi-eye
       url: https://drop-it.web.app
     - name: DropIT Repository
       icon: bx bxl-github
@@ -53,11 +52,13 @@
     - name: DropIT Backend Repository
       icon: bx bxl-github
       url: https://github.com/aswanthabam/dropit-backend
+    - name: Product Hunt
+      url: https://www.producthunt.com/posts/dropit-0f956d64-4e7a-44ad-8f9b-6dc143b16a0c?utm_souce=aswanthvc.me
   image: https://drop-it.web.app/banner.png
   gallery:
-    - /assets/images/projects/banner/votechain.png
-    - /assets/images/projects/gallery/votechain/1.png
-    - /assets/images/projects/gallery/votechain/2.png
+    - https://drop-it.web.app/banner.png
+    - /assets/images/projects/gallery/dropit/1.png
+    - /assets/images/projects/gallery/dropit/2.png
   date: 2019-12-01
   skills:
     - fastapi

@@ -9,7 +9,9 @@
   .project-main {
     display: flex;
     gap: 20px;
-
+    .link-button {
+      display: none;
+    }
     .project-links {
       padding: 20px;
       width: calc(50% - 40px);
@@ -71,8 +73,31 @@
           background: #ffffff10;
         }
         .project-content {
+          width: 100%;
+          display: flex;
+          align-items: start;
+          justify-content: center;
+          flex-direction: column;
           font-size: 1rem;
-          padding: 10px;
+          gap: 10px;
+          ul {
+            margin-left: 20px;
+          }
+          table {
+            width: 100%;
+            border-collapse: collapse;
+            tr:nth-child(even) {
+              background-color: #22222290;
+            }
+            th {
+              font-weight: 900;
+            }
+            th,
+            td {
+              border: 1px solid #ffffff50;
+              padding: 10px;
+            }
+          }
         }
         .project-skills {
           max-width: 100%;
@@ -115,22 +140,10 @@
           img {
             width: 100%;
             border-radius: 10px;
+            filter: grayscale(100%);
             // transition: all 1s ease;
             &:hover {
-              // position: fixed;
-              // top: 50%;
-              // left: 50%;
-
-              // transform: translateX(-50%) translateY(-50%);
-              // max-width: 80vw;
-              // width: 80vw;
-              // object-fit: contain;
-              // max-height: 80vh;
-              // box-shadow: 1px 1px 10px #ffffff20;
-              padding: 10px;
-              background: #22222290;
-              border-radius: 10px;
-              transform: scale(1.01);
+              filter: grayscale(0%);
             }
           }
         }
@@ -141,8 +154,28 @@
 
 @media only screen and (max-width: 768px) {
   .project {
+    width: calc(100% - 0px);
+    min-height: calc(100vh - 140px);
+    padding: 0px;
     .project-main {
       flex-direction: column;
+      .link-button {
+        position: fixed;
+        bottom: 0;
+        right: 0;
+        display: flex;
+        gap: 5px;
+        align-items: center;
+        padding: 10px;
+        text-align: right;
+        background: #111111f0;
+        color: #fff;
+        border: 1px solid #ffffff;
+        text-decoration: none;
+        i {
+          font-size: 20px;
+        }
+      }
       .project-links {
         width: calc(100% - 40px);
         max-height: none;
@@ -159,6 +192,14 @@
             .project-skill {
               padding: 5px 10px;
               font-size: 0.8rem;
+            }
+          }
+          .gallery {
+            grid-template-columns: 1fr;
+            img {
+              width: 100%;
+              align-self: center;
+              max-height: 300px;
             }
           }
         }

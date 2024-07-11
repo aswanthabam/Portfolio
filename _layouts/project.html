@@ -5,6 +5,9 @@ layout: default
 <div class="project">
   {% for project in site.data.projects %} {% if project.id == page.id %}
   <div class="project-main">
+    <a href="#links" class="link-button"
+      ><i class="bx bx-link"></i> Head to Links</a
+    >
     <div class="project-header">
       <div class="left">
         <h1 class="project-title">
@@ -12,7 +15,12 @@ layout: default
         </h1>
         <p class="project-description">{{project.description}}</p>
         <h3><span class="pin2">##</span> About the project</h3>
-        <p class="project-content">{{ project.content }}</p>
+        <div class="project-content">
+          {% if project.content %} {{project.content}} {% endif %} {% if
+          project.content_file %} {% capture contents %} {% include
+          project_contents/{{ project.content_file }} %} {% endcapture %}
+          {{contents | markdownify }} {% endif %}
+        </div>
         <div class="project-skills">
           {% for project_skill in project.skills %} {% for skill in
           site.data.skills %} {% if skill.id == project_skill %}
@@ -32,12 +40,14 @@ layout: default
         </div>
       </div>
     </div>
-    <div class="project-links">
+    <div id="links" class="project-links">
       <h2>Links</h2>
       <p>Check out the links below to learn more about this project.</p>
       {% for link in project.links %}
       <a href="{{link.url}}" target="_blank" class="project-link">
-        <i class="{{link.icon}}"></i>
+        <i
+          class="{% if link.icon %}{{link.icon}}{%else%}bx bx-link{%endif%}"
+        ></i>
         <span>{{link.name}}</span>
         <i class="bx bx-link-external"></i>
       </a>
