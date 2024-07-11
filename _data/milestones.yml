@@ -1,29 +1,27 @@
-- title: CodeCraft Apprenticeship
-  description: Joined CodeCraft as an Apprentice in Mobile App Development, focusing on Android and iOS platforms. Utilized Kotlin, Swift, and Flutter to develop and optimize mobile applications. This apprenticeship emphasizes on enhancing user interface designs and integrating seamless backend functionalities, offering a comprehensive experience in modern app development.
-  date: 2023 Oct 01 - Present
-
 - title: MuLearn Internship
-  description: Secured an internship as a Bot Developer at MuLearn, specializing in Discord bot development. This role leverages skills in Python, SQL, Django, and the Discord.py library to enhance bot functionalities. The position provides an opportunity to deepen expertise in backend development and real-time communication applications, fostering more dynamic and engaging bot interactions on Discord.
-  date: 2023 Nov 14
-
-- title: MuLearn Internship
-  description: Got placed as a bot developer intern at mulearn.
-  date: 2023 Apr 31
-
-- title: NextGen AI Research Internship
-  description: Engaged in an AI research internship at NextGen, focusing on machine learning model optimization. Tasks included refining neural network architectures using Python and TensorFlow, contributing to cutting-edge AI solutions for real-world applications. The internship aims to bridge theoretical knowledge and practical implementation in AI.
-  date: 2023 Oct 01
-
-- title: GreenTech Environmental Analyst Trainee
-  description: Assumed the role of Environmental Analyst Trainee at GreenTech, working on sustainability projects that leverage big data and analytics to track environmental impacts. Utilized Python and R for data analysis, aiding in the development of strategies for reduced carbon footprints and enhanced ecological conservation.
-  date: 2023 Oct 01 - 2019 Mar 31
-
-- title: CyberSec Defense Intern
-  description: Started an internship in cybersecurity at CyberSec Defense, focusing on network security solutions. Responsibilities included implementing firewalls, conducting penetration testing, and securing databases against cyber threats, using tools like Wireshark and Kali Linux to strengthen defense mechanisms.
+  description: I am excited to announce my new role as a Bot Developer Intern at MuLearn, a leading learning community for students. This position allows me to leverage my Python skills and SQL expertise to develop innovative bots that enhance the educational experience. Working at MuLearn has also refined my ability to write clear, maintainable code in a collaborative environment. This was my first opportunity to engage with a large codebase, providing a significant learning curve. In addition to bot development, I have contributed to the backend of MuLearn, utilizing Django and the REST framework, which has further honed my backend development skills.
   date: 2023 Oct 01 - Present
-
-- title: FinTech Developer Internship
-  description: Joined FinTech Innovations as a Developer Intern, working on blockchain and cryptocurrency projects. This role involved developing smart contracts using Solidity and contributing to the backend of financial technologies with Python and Node.js, aiming to revolutionize financial transactions and data security.
-  date: 2023 Oct 01 - 2023 Dec 31
-
-
+- title: Debugging Competition
+  description: I won first prize in a debugging competition held at St. Joseph College, Pillathara. It was a wonderful and challenging competition that provided me with an opportunity to showcase my skills in competitive coding and C programming.
+  date: 2024 Mar 1
+- title: Mavelik Oru Portfolio
+  description: I won first prize in a web designing competition called 'Mavelik oru Portfolio,' organized by MuLearn. In this competition, I created a portfolio website for Maveli, a ritual god in Kerala. The website was designed in an engaging and fun manner, effectively showcasing my web design skills.
+  date: 2023 Sep 19
+- title: Code a Pookalam
+  description: I won first prize in a competition called 'Code a Pookalam,' organized by FOSS MEC. This Python turtle designing competition required participants to create a 'pookalam,' a traditional floral arrangement from Kerala, incorporating a 'theyyam' image, which represents a popular ritual form of worship in Kerala. Crafting a complex design using Python turtle presented a significant challenge, but my successful execution led to winning the top honor.
+  date: 2023 Aug 24
+- title: UI/UX Hackathon
+  description: I am thrilled to share that my team and I won third prize at the UI/UX Hackathon during GTA Codestorm, organized by MuLearn at KMEA College of Engineering. It was my first time participating in a hackathon focused on UI/UX, and the experience was immensely rewarding. Along with my teammates Vishnu Hidesh and Amaan Shah, we delved into the fundamentals of UX, including user personas, information architecture, and user research. We designed a UI/UX solution for a given problem and, following our presentation, were honored with third place. This event was a fantastic opportunity to showcase our creativity and UI/UX skills.
+  date: 2023 Aug 19 - 2023 Aug 20
+- title: AI/ML Workshop
+  description: I participated in a three-day hands-on workshop on Artificial Intelligence (AI) and Machine Learning (ML) at Mary Matha Arts and Science College in Mananthavady. The workshop provided a comprehensive introduction to the field of AI and ML, covering both theoretical concepts and practical applications. This workshop laid the groundwork for my journey into the world of AI and ML. Our resource person, Sabhu, helped us start with the basics and progressively build AI and ML models, including topics like linear regression, decision trees, and more advanced architectures such as DNNs, CNNs, and GANs for generative models. It was an enlightening and invaluable opportunity.
+  date: 2023 May 26 - 2023 May 28
+- title: Web Development Competition
+  description: I participated and emerged as the winner in a web designing competition at Engineering College Thalassery. The event was a showcase for participants to demonstrate their skills and creativity in website design and development. The competition was a wonderful experience, during which I built a comic-themed website for Marvel.
+  date: 2023 May 04
+- title: Shell Scripting Competition
+  description: I won third prize in the Shell Scripting competition at the National Institute of Technology, Calicut (NITC). This event offered participants a chance to demonstrate their expertise in scripting and automation using the Unix shell. It was a wonderful opportunity to showcase my skills in shell scripting and Linux. Additionally, experiencing the campus environment at NIT was particularly enjoyable.
+  date: 2022 Oct 23
+- title: Coding Competition
+  description: I secured the second prize in the coding competition at Rajagiri College of Social Sciences in Kochi. The event was a platform for participants to demonstrate their coding skills, problem-solving abilities, and algorithmic thinking. This was my first time attending an offline tech event, and the impressive experience, coupled with the victory, encouraged me to participate in more such events.
+  date: 2022 Aug 12

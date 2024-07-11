@@ -7,7 +7,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
-  
+
   .filters {
     z-index: 1;
     position: relative;
@@ -15,32 +15,32 @@
     align-items: center;
     justify-content: space-between;
     .display-filter {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      .selected-filters::-webkit-scrollbar {
+        display: none;
+      }
+      .selected-filters {
         display: flex;
         align-items: center;
         gap: 10px;
-        .selected-filters::-webkit-scrollbar {
-            display: none;
-        }
-        .selected-filters {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            overflow: auto;
+        overflow: auto;
 
-            span {
-                display: none;
-                padding: 5px 10px;
-                border-radius: 10px;
-                background: #8bf5be;
-                color: black;
-                align-items: center;
-                justify-content: center;
-                gap: 5px;
-                &.active {
-                    display: flex;
-                }
-            }
+        span {
+          display: none;
+          padding: 5px 10px;
+          border-radius: 10px;
+          background: #8bf5be;
+          color: black;
+          align-items: center;
+          justify-content: center;
+          gap: 5px;
+          &.active {
+            display: flex;
+          }
         }
+      }
       .filter {
         list-style-type: none;
         position: relative;
@@ -93,86 +93,90 @@
   .projects {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20%, 0.3fr)); /* Adjust the column width as needed */
+    grid-template-columns: repeat(auto-fit, minmax(20%, 0.3fr));
     grid-auto-rows: max-content;
     gap: 20px;
-    // padding: 20px;
 
     .project {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      padding: 20px;
+      border-radius: 10px;
+      background: #282828;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+      transition: all 0.3s;
+      position: relative;
+      overflow: hidden;
+
+      .project-info {
         display: flex;
         flex-direction: column;
         gap: 10px;
-        padding: 20px;
-        border-radius: 10px;
-        background: #282828;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        transition: all 0.3s;
-        position: relative;
-        overflow: hidden;
-
-        .project-info {
+        h2 {
+          font-size: 25px;
+        }
+        .project-skills {
+          width: 100%;
           display: flex;
-          flex-direction: column;
-          gap: 10px;
-          h2 {
-            font-size: 25px;
+          justify-content: end;
+          align-items: center;
+          gap: 3px;
+          .svgIcon {
+            max-width: 15px;
+            max-height: 15px;
+            fill: #ffffff70;
           }
-          .project-skills {
-            width: 100%;
-            display: flex;
-            justify-content: end;
-            gap: 2px;
-            i {
-              font-size: 20px;
-              color: #ffffff70;
+          i {
+            font-size: 20px;
+            color: #ffffff70;
 
-              &:hover {
-                color: #8bdcf5;
-              }
+            &:hover {
+              color: #8bdcf5;
             }
           }
         }
+      }
 
-        .project-button {
-          width: 100%;
-          height: 100%;
-          position: absolute;
-          top: 0;
-          left: 0;
-          background: #1f362a86;
-          display:flex;
+      .project-button {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: #1f362a86;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 0;
+        z-index: -1;
+        transition: all 0.5s ease;
+
+        a {
+          display: flex;
           align-items: center;
           justify-content: center;
-          opacity: 0;
-          z-index: -1;
-          transition: all 0.5s ease;
-
-          a {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-            padding: 10px 20px;
-            background: #8bdcf5;
-            color: #000;
-            text-decoration: none;
-            border-radius: 10px;
-          }
+          gap: 10px;
+          padding: 10px 20px;
+          background: #8bdcf5;
+          color: #000;
+          text-decoration: none;
+          border-radius: 10px;
         }
+      }
 
-        &:hover {
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-            .project-button {
-              opacity: 1;
-              z-index: auto;
+      &:hover {
+        box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        .project-button {
+          opacity: 1;
+          z-index: auto;
+        }
+      }
 
-            }
-        }
-        
-        img {
-            width: 100%;
-            border-radius: 10px;
-        }
+      img {
+        width: 100%;
+        border-radius: 10px;
+      }
     }
   }
 }
@@ -180,7 +184,7 @@
 @media only screen and (max-width: 768px) {
   .projects {
     .projects {
-      grid-template-columns: calc(100% - 20px);
+      grid-template-columns: 100%;
       .project {
         &:hover {
           transform: none;

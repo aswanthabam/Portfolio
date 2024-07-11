@@ -196,6 +196,14 @@
           padding-right: 30px;
           border-right: 1px solid $text;
           text-decoration: none;
+          .svgIcon {
+            max-width: 40px;
+            max-height: 40px;
+            fill: #ffffff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+          }
           i {
             font-size: 50px;
             color: $text;
@@ -256,7 +264,6 @@
   }
 }
 
-
 @media only screen and (max-width: 768px) {
   .home {
     .page1 {
@@ -268,11 +275,9 @@
           .skill {
             i {
               font-size: 40px;
-            
             }
             .name {
               font-size: 15px;
-            
             }
           }
         }

@@ -36,7 +36,12 @@ title: Home
       </div>
       <div class="socials">
         {% for item in site.data.socials %}
-        <a href="{{item.url}}" target="_blank" aria-label="View {{item.name}} profile of Aswanth V C"><i class="{{item.icon}}"></i></a>
+        <a
+          href="{{item.url}}"
+          target="_blank"
+          aria-label="View {{item.name}} profile of Aswanth V C"
+          ><i class="{{item.icon}}"></i
+        ></a>
         {% endfor %}
       </div>
       <div class="right">
@@ -67,12 +72,13 @@ title: Home
     </div>
     <div class="skills">
       <div id="skills" class="wrapper">
-        {% for item in site.data.skills %}
-        <a href="/projects?skill={{item.id}}" class="skill">
-          <i class="{{item.icon}}"></i>
-          <span class="name">{{ item.name }}</span>
+        {% for skill in site.data.skills %} {% if site.data.home.display_skills
+        contains skill.id %}
+        <a href="/projects?skill={{skill.id}}" class="skill">
+          {% include skill_icon.html %}
+          <span class="name">{{ skill.name }}</span>
         </a>
-        {% endfor %}
+        {% endif %} {% endfor %}
       </div>
     </div>
   </div>
