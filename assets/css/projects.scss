@@ -93,13 +93,9 @@
   .projects {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(
-      auto-fit,
-      minmax(20%, 0.3fr)
-    ); /* Adjust the column width as needed */
+    grid-template-columns: repeat(auto-fit, minmax(20%, 0.3fr));
     grid-auto-rows: max-content;
     gap: 20px;
-    // padding: 20px;
 
     .project {
       display: flex;
@@ -188,7 +184,7 @@
 @media only screen and (max-width: 768px) {
   .projects {
     .projects {
-      grid-template-columns: calc(100% - 20px);
+      grid-template-columns: 100%;
       .project {
         &:hover {
           transform: none;
