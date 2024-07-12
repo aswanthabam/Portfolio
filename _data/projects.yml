@@ -36,6 +36,7 @@
     - web3
     - truffle
     - ganache
+    - git
 
 - project:
   id: dropit
@@ -67,6 +68,8 @@
     - nextjs
     - nodejs
     - python
+    - git
+    - github
 
 - project:
   id: robocar
@@ -93,3 +96,108 @@
     - android
     - figma
     - java
+
+- project:
+  id: vehicledetection
+  name: Vehicle Detection System
+  description: This project aims to build a website which detects different types of vehicles from the uploaded image. also counts the images and marks the vehicles.
+  content_file: vehicledetection.md
+  links:
+    - name: Github Repository
+      icon: bx bxl-github
+      url: https://github.com/aswanthabam/Vehicle-Detection
+    - name: Sample
+      url: https://vehicle-detection.web.app/
+
+  image: /assets/images/projects/banner/vehicledetection.png
+  gallery:
+    - /assets/images/projects/banner/vehicledetection.png
+  date: Feb 2024
+  skills:
+    - react
+    - vite
+    - flask
+    - yolov3
+    - docker
+    - git
+    - github
+    - devops
+
+- project:
+  id: vijnana
+  name: Vijnana Website
+  description: I developed a comprehensive website for my college tech fest, Vijnana, that facilitates candidate registration and event viewing. The website integrates Google authentication for secure and seamless user access, ensuring a smooth and user-friendly experience for all participants.l̥
+  content_file: vijnana.md
+  links:
+    - name: Github Repository
+      icon: bx bxl-github
+      url: https://github.com/aswanthabam/Vijnana
+    - name: Website
+      url: https://vijnana.web.app/v1
+    - name: Vijnana 2021
+      icon: bx bxl-github
+      url: https://github.com/aswanthabam/Vijnana/tree/v1
+    - name: Backend Repository
+      icon: bx bxl-github
+      url: https://github.com/aswanthabam/vijnanabackend
+
+  image: /assets/images/projects/banner/vijnana.png
+  gallery:
+    - /assets/images/projects/banner/vijnana.png
+  date: Feb 2024
+  skills:
+    - react
+    - expressjs
+    - mongodb
+    - cloud
+    - firebase
+    - git
+    - github
+    - devops
+
+- project:
+  id: rocketblast
+  name: Rocket Blast
+  description: RocketBlast is a 2D Android game developed using the libGDX framework. In this game, players take control of a rocket navigating through a dynamic environment filled with coins and rocks.
+  content_file: rocketblast.md
+  links:
+    - name: Github Repository
+      icon: bx bxl-github
+      url: https://github.com/aswanthabam/RocketBlast
+    - name: Download
+      icon: bx bxs-download
+      url: https://github.com/aswanthabam/RocketBlast/releases
+
+  image: /assets/images/projects/banner/rocketblast.png
+  gallery:
+    - /assets/images/projects/banner/rocketblast.png
+    - https://raw.githubusercontent.com/aswanthabam/RocketBlast/ae8960f1265353f36063185aff21495461bc161a/screenshots/Screenshot-Playing.jpg
+    - https://raw.githubusercontent.com/aswanthabam/RocketBlast/ae8960f1265353f36063185aff21495461bc161a/screenshots/Screenshpt-Game%20Over.jpg
+  date: 2021
+  skills:
+    - android
+    - java
+    - libgdx
+    - gradle
+
+- project:
+  id: avcmanager
+  name: AVC Manager
+  description: AVC Manager is a versatile Android app that enhances device functionality with features like Status Downloader, Storage Saver, and Device Optimization. It offers quick processing, an engaging user interface, and the ability to preview statuses. The app helps clean unnecessary files from apps like WhatsApp, Facebook, and Telegram, saves audio directly from WhatsApp Status, and provides in-app updates.
+  content_file: avcmanager.md
+  links:
+    - name: Github Repository
+      icon: bx bxl-github
+      url: https://github.com/aswanthabam/Manager
+    - name: Download
+      icon: bx bxs-download
+      url: https://github.com/aswanthabam/Manager/releases
+
+  image: /assets/images/projects/banner/avcmanager.png
+  gallery:
+    - /assets/images/projects/banner/avcmanager.png
+  date: 2022
+  skills:
+    - android
+    - java
+    - gradle
