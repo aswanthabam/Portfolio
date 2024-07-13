@@ -1,0 +1,95 @@
+- id: react
+  name: React
+  icon: bx bxl-react
+
+- id: fastapi
+  name: FastAPI
+
+- id: django
+  name: Django
+  icon: bx bxl-django
+
+- id: flutter
+  name: Flutter
+  icon: bx bxl-flutter
+
+- id: android
+  name: Android
+  icon: bx bxl-android
+
+- id: mongodb
+  name: MongoDB
+  icon: bx bxl-mongodb
+
+- id: nextjs
+  name: Next.js
+
+- id: figma
+  name: Figma
+  icon: bx bxl-figma
+
+- id: docker
+  name: Docker
+  icon: bx bxl-docker
+
+- id: nodejs
+  name: Node.js
+  icon: bx bxl-nodejs
+
+- id: web3
+  name: Web3
+  icon: bx bx-cube-alt
+
+- id: devops
+  name: DevOps
+
+- id: machinelearning
+  name: Machine Learning
+
+- id: arduino
+  name: Arduino
+
+- id: supabase
+  name: Supabase
+
+- id: iot
+  name: IoT
+  icon: bi bi-cpu
+
+- id: python
+  name: Python
+  icon: bx bxl-python
+
+- id: flask
+  name: Flask
+  icon: bx bxl-flask
+
+- id: solidity
+  name: Solidity
+
+- id: java
+  name: Java
+  icon: bx bxl-java
+
+- id: javascript
+  name: JavaScript
+  icon: bx bxl-javascript
+
+- id: html
+  name: HTML
+  icon: bx bxl-html5
+
+- id: css
+  name: CSS
+  icon: bx bxl-css3
+
+- id: jsfiddle
+  name: JSFiddle
+  icon: bx bxl-jsfiddle
+
+- id: git
+  name: Git
+  icon: bx bxl-git
+
+- id: pypi
+  name: PyPI

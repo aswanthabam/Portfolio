@@ -1,0 +1,5 @@
+{% if skill.icon %}
+<i class="{{skill.icon}}"></i>
+{% else %} {% assign icon_path = '/icons/skills/' | relative_url | append:
+skill.id | append: '.svg' %} {% capture icon_include %}{% include {{ icon_path
+}} %}{% endcapture %} {{ icon_include}} {% endif %}
