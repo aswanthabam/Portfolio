@@ -26,6 +26,11 @@
         align-items: center;
         gap: 10px;
         overflow: auto;
+        .svgIcon {
+          max-width: 18px;
+          max-height: 18px;
+          fill: #000;
+        }
 
         span {
           display: none;
@@ -65,6 +70,11 @@
             left: 50%;
             overflow: scroll;
             max-height: calc(100vh - 200px);
+            .svgIcon {
+              max-width: 18px;
+              max-height: 18px;
+              fill: #000;
+            }
             a {
               color: black;
               padding: 12px 16px;
@@ -112,25 +122,39 @@
       .project-info {
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        height: 100%;
         gap: 10px;
         h2 {
           font-size: 25px;
         }
+        p {
+          display: -webkit-box;
+          line-clamp: 6;
+          -webkit-line-clamp: 5;
+          -webkit-box-orient: vertical;
+          overflow: hidden;
+          text-overflow: ellipsis;
+        }
         .project-skills {
+          bottom: 0;
           width: 100%;
           display: flex;
           justify-content: end;
           align-items: center;
           gap: 3px;
           .svgIcon {
-            max-width: 15px;
-            max-height: 15px;
+            max-width: 20px;
+            max-height: 20px;
             fill: #ffffff70;
           }
           i {
             font-size: 20px;
             color: #ffffff70;
-
+            &.bi {
+              margin: 3px;
+              font-size: 17px;
+            }
             &:hover {
               color: #8bdcf5;
             }
@@ -169,7 +193,10 @@
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
         .project-button {
           opacity: 1;
-          z-index: auto;
+          z-index: 10;
+        }
+        img {
+          filter: grayscale(100%);
         }
       }
 
@@ -188,10 +215,6 @@
       .project {
         &:hover {
           transform: none;
-          .project-button {
-            opacity: 1;
-            z-index: auto;
-          }
         }
       }
     }

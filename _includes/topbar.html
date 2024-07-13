@@ -1,13 +1,17 @@
 <nav class="topbar desktop">
   <div class="menu-items">
-    {% for item in site.data.menu %}
+    {% assign main_item = false %} {% for item in site.data.menu %} {% if
+    page.url == item.url %} {% assign main_item = true %} {% endif %} {% endfor
+    %} {% for item in site.data.menu %}
     <a
       href="{{ item.url }}"
       class="{% if page.url == item.url %}current{% endif %}"
       >{% if page.url == item.url %}[ {{ item.name }} ]{% else %}{{item.name}}{%
       endif %}</a
     >
-    {% endfor %}
+    {% endfor %} {% if main_item == false %}
+    <a href="#" class="current">[ {{ page.title }} ]</a>
+    {% endif %}
   </div>
 </nav>
 <nav class="topbar mobile">
@@ -22,7 +26,9 @@
   <div id="menu" class="menu">
     <span id="closeBtn"> [x] close</span>
     <div class="menu-items">
-      {% for item in site.data.menu %}
+      {% if main_item == false %}
+      <a href="#" class="current">[ {{ page.title }} ]</a>
+      {% endif %} {% for item in site.data.menu %}
       <a
         href="{{ item.url }}"
         class="{% if page.url == item.url %}current{% endif %}"

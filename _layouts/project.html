@@ -26,7 +26,7 @@ layout: default
           site.data.skills %} {% if skill.id == project_skill %}
           <div class="project-skill">
             {% include skill_icon.html %}
-            <span>{{skill.id}}</span>
+            <span>{{skill.name}}</span>
           </div>
           {% endif %} {% endfor %} {% endfor %}
         </div>
