@@ -37,6 +37,7 @@
     - truffle
     - ganache
     - git
+    - figma
 
 - project:
   id: dropit
@@ -70,6 +71,7 @@
     - python
     - git
     - github
+    - figma
 
 - project:
   id: robocar
@@ -94,7 +96,6 @@
     - c
     - iot
     - android
-    - figma
     - java
 
 - project:
@@ -245,6 +246,7 @@
     - css
     - git
     - github
+    - figma
   date: 2024
   links:
     - name: Github Repository

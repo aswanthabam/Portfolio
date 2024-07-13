@@ -4,18 +4,19 @@
 @import "typography";
 .project {
   width: calc(100% - 40px);
-  min-height: calc(100vh - 180px);
-  padding: 20px;
+  min-height: calc(100vh - 140px);
+  padding: 0 20px 20px 20px;
   .project-main {
     display: flex;
     gap: 20px;
+    height: 100%;
     .link-button {
       display: none;
     }
     .project-links {
       padding: 20px;
       width: calc(50% - 40px);
-      height: 1;
+      height: fit-content;
       max-height: calc(100vh - 220px);
       overflow-y: auto;
       background: #11111130;
@@ -44,7 +45,7 @@
       flex-direction: column;
       align-items: start;
       // justify-content: start;
-      max-height: calc(100vh - 220px);
+      // max-height: calc(100vh - 180px);
       overflow: auto;
       gap: 20px;
 
@@ -55,6 +56,7 @@
         color: #ffffff50;
       }
       .left {
+        width: 100%;
         height: fit-content;
         display: flex;
         align-items: start;
