@@ -5,17 +5,8 @@
   "targets": {
     "aswanthvc1": {
       "hosting": {
-        "aswanthvc": [
-          "aswanthvc"
-        ],
-        "aswanth": [
-          "aswanth"
-        ],
-        "aswanthvc1": [
-          "aswanthvc1"
-        ],
-        "aswanth-vc": [
-          "aswanth-vc"
+        "aswanthvc-v1": [
+          "aswanthvc-1"
         ]
       }
     }
