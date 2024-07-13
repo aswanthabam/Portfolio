@@ -202,6 +202,58 @@
     - android
     - java
     - gradle
+
+- project:
+  id: portfoliov1
+  name: Portfolio V1
+  description: Initial version of my portfolio website, built with React for the frontend and ExpressJS with MongoDB for the backend. It showcases my projects and skills, and includes a contact section with a beautiful UI.
+  content:
+    The initial version of my portfolio website is designed to highlight my projects, skills, and professional background. Built with a robust frontend using React, it ensures a dynamic and responsive user experience. The backend, developed with ExpressJS and MongoDB, provides a solid foundation for data management and server-side operations. >
+    The website features a comprehensive showcase of my projects, detailed descriptions of my skills, and a visually appealing contact section that encourages interaction. The beautiful UI is crafted to provide an engaging and intuitive browsing experience for visitors, making it easy to navigate through the different sections of the site. This portfolio not only serves as a personal showcase but also demonstrates my capabilities in full-stack development.
+  image: /assets/images/projects/banner/portfoliov1.png
+  gallery:
+    - /assets/images/projects/banner/portfoliov1.png
+    - /assets/images/projects/gallery/portfoliov1/1.png
+    - /assets/images/projects/gallery/portfoliov1/2.png
+    - /assets/images/projects/gallery/portfoliov1/3.png
+  date: 2022
+  links:
+    - name: Github Repository
+      icon: bx bxl-github
+      url: https://github.com/aswanthabam/Portfolio/tree/v1
+    - name: Website
+      url: https://aswanthvc-v1.web.app
+  skills:
+    - react
+    - expressjs
+    - mongodb
+    - git
+    - github
+    - devops
+
+- project:
+  id: portfoliov2
+  name: Portfolio V2
+  description: The second version of my portfolio website is built using the Jekyll static site generator. It showcases my projects, skills, and professional background through a minimalistic design. This version also includes a contact form, facilitating easy communication.
+  content_file: portfoliov2.md
+  image: /assets/images/projects/banner/portfoliov2.png
+  gallery:
+    - /assets/images/projects/gallery/portfoliov2/1.png
+  skills:
+    - jekyll
+    - html
+    - css
+    - git
+    - github
+  date: 2024
+  links:
+    - name: Github Repository
+      icon: bx bxl-github
+      url: https://github.com/aswanthabam/Portfolio
+    - name: View
+      icon: bi bi-eye
+      url: https://aswanthvc.web.app
+
 - project:
   id: niram
   name: Niram
@@ -245,31 +297,3 @@
     - css
     - git
     - github
-
-- project:
-  id: portfoliov1
-  name: Portfolio V1
-  description: Initial version of my portfolio website, built with React for the frontend and ExpressJS with MongoDB for the backend. It showcases my projects and skills, and includes a contact section with a beautiful UI.
-  content:
-    The initial version of my portfolio website is designed to highlight my projects, skills, and professional background. Built with a robust frontend using React, it ensures a dynamic and responsive user experience. The backend, developed with ExpressJS and MongoDB, provides a solid foundation for data management and server-side operations. >
-    The website features a comprehensive showcase of my projects, detailed descriptions of my skills, and a visually appealing contact section that encourages interaction. The beautiful UI is crafted to provide an engaging and intuitive browsing experience for visitors, making it easy to navigate through the different sections of the site. This portfolio not only serves as a personal showcase but also demonstrates my capabilities in full-stack development.
-  image: /assets/images/projects/banner/portfoliov1.png
-  gallery:
-    - /assets/images/projects/banner/portfoliov1.png
-    - /assets/images/projects/gallery/portfoliov1/1.png
-    - /assets/images/projects/gallery/portfoliov1/2.png
-    - /assets/images/projects/gallery/portfoliov1/3.png
-  date: 2022
-  links:
-    - name: Github Repository
-      icon: bx bxl-github
-      url: https://github.com/aswanthabam/Portfolio/tree/v1
-    - name: Website
-      url: https://aswanthabam.github.io/Portfolio/v1
-  skills:
-    - react
-    - expressjs
-    - mongodb
-    - git
-    - github
-    - devops

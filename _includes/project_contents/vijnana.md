@@ -1,5 +1,3 @@
-## Overview
-
 The Vijnana Tech Fest website is a dynamic and user-friendly platform designed to streamline the registration process for candidates and provide easy access to event information. This website ensures a seamless and secure experience for all users through the integration of Google authentication.
 
 ## Features

@@ -130,8 +130,8 @@
         }
         p {
           display: -webkit-box;
-          line-clamp: 7;
-          -webkit-line-clamp: 7;
+          line-clamp: 6;
+          -webkit-line-clamp: 5;
           -webkit-box-orient: vertical;
           overflow: hidden;
           text-overflow: ellipsis;
@@ -193,7 +193,10 @@
         box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
         .project-button {
           opacity: 1;
-          z-index: auto;
+          z-index: 10;
+        }
+        img {
+          filter: grayscale(100%);
         }
       }
 

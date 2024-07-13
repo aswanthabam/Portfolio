@@ -87,3 +87,6 @@
 
 - id: pypi
   name: PyPI
+
+- id: devops
+  name: DevOps
