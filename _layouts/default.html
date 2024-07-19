@@ -90,6 +90,17 @@
     />
     <script src="{{ '/assets/js/contact.js' | relative_url }}"></script>
     {% endif %}
+    <script>
+      try {
+        fetch("https://products.aswanthvc.me/api/product/portfoliov2/visit")
+          .then((res) => res.json())
+          .then((res) => {
+            console.log("Captured!");
+          });
+      } catch (e) {
+        console.error("Failed to Capture!");
+      }
+    </script>
   </head>
   <body>
     <div class="main">
