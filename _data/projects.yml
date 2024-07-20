@@ -47,7 +47,7 @@
   links:
     - name: DropIT
       icon: bi bi-eye
-      url: https://drop-it.web.app
+      url: https://drop-it.web.app?ref=portfoliov2
     - name: DropIT Repository
       icon: bx bxl-github
       url: https://github.com/aswanthabam/dropit
@@ -108,7 +108,7 @@
       icon: bx bxl-github
       url: https://github.com/aswanthabam/Vehicle-Detection
     - name: Sample
-      url: https://vehicle-detection.web.app/
+      url: https://vehicle-detection.web.app/?ref=portfoliov2
 
   image: /assets/images/projects/banner/vehicledetection.png
   gallery:
@@ -135,7 +135,7 @@
       icon: bx bxl-github
       url: https://github.com/aswanthabam/Vijnana
     - name: Website
-      url: https://vijnana.web.app/v1
+      url: https://vijnana.web.app/v1?ref=portfoliov2
     - name: Vijnana 2021
       icon: bx bxl-github
       url: https://github.com/aswanthabam/Vijnana/tree/v1
@@ -223,7 +223,7 @@
       icon: bx bxl-github
       url: https://github.com/aswanthabam/Portfolio/tree/v1
     - name: Website
-      url: https://aswanthvc-v1.web.app
+      url: https://aswanthvc-v1.web.app?ref=portfoliov2
   skills:
     - react
     - expressjs
@@ -254,7 +254,7 @@
       url: https://github.com/aswanthabam/Portfolio
     - name: View
       icon: bi bi-eye
-      url: https://aswanthvc.web.app
+      url: https://aswanthvc.web.app?ref=portfoliov2
 
 - project:
   id: niram
